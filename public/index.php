@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Simple</title>
-    <link rel="stylesheet" href="assets/reset.css">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets//reset.css">
+    <link rel="stylesheet" href="assets/vap/style.css">
 </head>
 <body>
 
 
 <div class="logo">
-    <img src="assets/logoAP.png" alt="Logo votre artisan pro, bleu et orange" >
+    <img src="assets/vap/logoAP.png" alt="Logo votre artisan pro, bleu et orange" >
 </div>
 <h1>Votre site professionnel clé en main pour votre activité artisanale</h1>
 <h2>En ligne en 24h – Simple, fiable, sans compétence technique</h2>
@@ -72,7 +72,7 @@
     <div id="form-response"></div>
 </form>
 
-<script src="assets/form.js"></script>
+<script src="assets/vap/form.js"></script>
             
 </body>
 </html>
