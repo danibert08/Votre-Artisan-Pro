@@ -18,7 +18,8 @@ if (!preg_match('/^[a-z0-9\-]{2,50}$/', $subdomain)) {
     http_response_code(404);
     exit("Artisan non trouvé.");
 }
-
+echo($subdomain);
+exit;
 // Chemin cache HTML
 $cacheDir = __DIR__ . "/cache/";
 $cacheFile = $cacheDir . $subdomain . ".html";
