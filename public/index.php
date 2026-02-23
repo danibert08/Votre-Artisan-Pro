@@ -16,7 +16,7 @@
 <h1>Votre site professionnel clé en main pour votre activité artisanale</h1>
 <h2>En ligne en 24h – Simple, fiable, sans compétence technique</h2>
 <br><p>Tarif abordable et pas de coûts cachés</p><br><br>
-<h2>En preprod</h2>
+<h2>En construction</h2>
 <!--<button>Je crée mon site maintenant</button>-->
 <!--    ******FORMULAIRE DE CONTACT *******-->
 
