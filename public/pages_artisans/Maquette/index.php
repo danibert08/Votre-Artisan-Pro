@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ypria</title>
-    <link rel="stylesheet" href="../../assets/reset.css" class="css">
-    <link rel="stylesheet" href="../../assets/assets_artisans/style.css" class="css">
+    <link rel="stylesheet" href="/pages_artisans/css/reset.css" class="css">
+    <link rel="stylesheet" href="/pages_artisans/css/style.css" class="css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
@@ -68,7 +68,7 @@
 
             <div class="en-tete__contact">
                 <div class="button" >
-                    <img class="en-tete__contact_icone" src="../../assets/icones/telephone.svg" alt=""> 
+                    <img class="en-tete__contact_icone" src="/pages_artisans/icones/telephone.svg" alt=""> 
                     <a class="en-tete__contact-text" href="tel:+33745063458">             
                         07 45 06 34 58 
                     </a>
@@ -113,7 +113,7 @@
                 </div>
                 <div class="en-tete__contact">
                 <div id="services2" class="button" >
-                    <img class="en-tete__contact_icone" src="../../assets/icones/telephone.svg" alt=""> 
+                    <img class="en-tete__contact_icone" src="/pages_artisans/icones/telephone.svg" alt=""> 
                     <a class="en-tete__contact-text" href="tel:+33745063458">             
                         07 45 06 34 58 
                     </a>
@@ -160,7 +160,7 @@
             </div>
             <div class="en-tete__contact">
                 <div class="button" >
-                    <img class="en-tete__contact_icone" src="../../assets/icones/telephone.svg" alt=""> 
+                    <img class="en-tete__contact_icone" src="/pages_artisans/icones/telephone.svg" alt=""> 
                     <a class="en-tete__contact-text" href="tel:+33745063458">             
                         07 45 06 34 58 
                     </a>
@@ -193,7 +193,7 @@ Afin de vous proposer un **devis précis et au prix juste**, je me déplace dire
             </section>
             <div id="contact" class="en-tete__contact">
                 <div class="button" >
-                    <img class="en-tete__contact_icone" src="../../assets/icones/telephone.svg" alt=""> 
+                    <img class="en-tete__contact_icone" src="/pages_artisans/icones/telephone.svg" alt=""> 
                     <a class="en-tete__contact-text" href="tel:+33745063458">             
                         Votre numéro de mobile
                     </a>
@@ -230,13 +230,13 @@ Afin de vous proposer un **devis précis et au prix juste**, je me déplace dire
                 <p class="socialmedia-title">Pour me suivre :</p>
                 <div class="socialmedia-icons">
                     <a class="socialmedia-link insta"  href="https://www.instagram.com/ypria_beauty?igsh=MWw1ZDdpdHQ1NjJnOQ==">             
-                        <img class="socialmedia-img" src="../../assets/icones/icons8-instagram-48.svg"  alt=""> 
+                        <img class="socialmedia-img" src="/pages_artisans/icones/icons8-instagram-48.svg"  alt=""> 
                     </a>
                     <a class="socialmedia-link tictac"  href="https://www.tiktok.com/@ypria_?_r=1&_t=ZN-93t81PboCjD">             
-                        <img class="socialmedia-img" src="../../assets/icones/icons8-tic-tac-50.svg" alt=""> 
+                        <img class="socialmedia-img" src="/pages_artisans/icones/icons8-tic-tac-50.svg" alt=""> 
                     </a>
                     <a class="socialmedia-link fbook"  href="https://www.facebook.com/share/14VhSsPpgAV/?mibextid=wwXIfr">             
-                        <img class="socialmedia-img" src="../../assets/icones/icons8-facebook-48.svg"  alt=""> 
+                        <img class="socialmedia-img" src="/pages_artisans/icones/icons8-facebook-48.svg"  alt=""> 
                     </a>
                 </div>
             </div> 

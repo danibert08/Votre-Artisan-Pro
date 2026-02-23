@@ -58,10 +58,6 @@ if (!$subdomain || !preg_match('/^[a-z0-9-]{2,50}$/', $subdomain)) {
 
 $artisanDir = realpath($baseDir . '/' . $subdomain);
 
-var_dump($subdomain);
-var_dump($artisanDir);
-var_dump(file_exists($baseDir . '/' . $subdomain));
-exit;
 
 // Vérifie que le dossier existe
 if ($artisanDir === false || !str_starts_with($artisanDir, realpath($baseDir))) {
