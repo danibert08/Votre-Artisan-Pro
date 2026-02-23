@@ -28,10 +28,10 @@
 
             <div id="accueil" class="en-tete">
                 <div class="en-tete__hero">
-                    <img class="en-tete__hero_hero-img" src="images/photos1/m1.jpeg"  alt="" >
+                    <img class="en-tete__hero_hero-img" src="/pages_artisans/maquette/images/photos1/m1.jpeg"  alt="" >
                 </div>
                 <!--<div class="en-tete__logo">
-                    <img class="en-tete__logo_logo-img" src="images/logo/logo.jpeg"  alt="">
+                    <img class="en-tete__logo_logo-img" src="/pages_artisans/maquette/images/logo/logo.jpeg"  alt="">
                 </div>-->
             </div>
 
@@ -91,24 +91,24 @@
                                 <!--     Main1 Pictures     -->
 
                     <p class="services__lambda_photos">
-                        <img class="photo photo1" src="images/photos1/m1.jpeg" width="100" alt="">                    
-                        <img class="photo photo2" src="images/photos1/m2.jpeg"  width="100" alt="">
+                        <img class="photo photo1" src="/pages_artisans/maquette/images/photos1/m1.jpeg" width="100" alt="">                    
+                        <img class="photo photo2" src="/pages_artisans/maquette/images/photos1/m2.jpeg"  width="100" alt="">
                     </p>
                     <p class="services__lambda_photos">
-                        <img class="photo photo3" src="images/photos1/m3.jpeg"  width="100" alt="">                  
-                        <img class="photo photo4" src="images/photos1/m4.jpeg" width="100" alt="">
+                        <img class="photo photo3" src="/pages_artisans/maquette/images/photos1/m3.jpeg"  width="100" alt="">                  
+                        <img class="photo photo4" src="/pages_artisans/maquette/images/photos1/m4.jpeg" width="100" alt="">
                     </p>
                     <p class="services__lambda_photos">
-                        <img class="photo photo5" src="images/photos1/m5.jpeg" width="100" alt="">                    
-                        <img class="photo photo6" src="images/photos1/m6.jpeg" width="100" alt="">
+                        <img class="photo photo5" src="/pages_artisans/maquette/images/photos1/m5.jpeg" width="100" alt="">                    
+                        <img class="photo photo6" src="/pages_artisans/maquette/images/photos1/m6.jpeg" width="100" alt="">
                     </p>
                     <p class="services__lambda_photos">
-                        <img class="photo photo7" src="images/photos1/m7.jpeg"  width="100" alt="">                  
-                        <img class="photo photo8" src="images/photos1/m8.jpeg"  width="100" alt="">
+                        <img class="photo photo7" src="/pages_artisans/maquette/images/photos1/m7.jpeg"  width="100" alt="">                  
+                        <img class="photo photo8" src="/pages_artisans/maquette/images/photos1/m8.jpeg"  width="100" alt="">
                     </p>
                     <p class="services__lambda_photos">
-                        <img class="photo photo9" src="images/photos1/m9.jpeg"  width="100" alt="">                   
-                        <img class="photo photo10" src="images/photos1/m10.jpeg" width="100" alt="">
+                        <img class="photo photo9" src="/pages_artisans/maquette/images/photos1/m9.jpeg"  width="100" alt="">                   
+                        <img class="photo photo10" src="/pages_artisans/maquette/images/photos1/m10.jpeg" width="100" alt="">
                     </p>
                 </div>
                 <div class="en-tete__contact">
@@ -131,24 +131,24 @@
                                 <!--     Main2 Pictures    -->
 
                     <p class="services__lambda_photos">
-                        <img class="photo photo11" src="images/photos2/m1.jpeg" width="100" alt="">                        
-                        <img class="photo photo12" src="images/photos2/m2.jpeg"  width="100" alt="">
+                        <img class="photo photo11" src="/pages_artisans/maquette/images/photos2/m1.jpeg" width="100" alt="">                        
+                        <img class="photo photo12" src="/pages_artisans/maquette/images/photos2/m2.jpeg"  width="100" alt="">
                     </p>
                     <p class="services__lambda_photos">
-                        <img class="photo photo13" src="images/photos2/m3.jpeg"  width="100" alt="">                   
-                        <img class="photo photo14" src="images/photos2/m4.jpeg" width="100" alt="">
+                        <img class="photo photo13" src="/pages_artisans/maquette/images/photos2/m3.jpeg"  width="100" alt="">                   
+                        <img class="photo photo14" src="/pages_artisans/maquette/images/photos2/m4.jpeg" width="100" alt="">
                     </p>
                     <p class="services__lambda_photos">
-                        <img class="photo photo15" src="images/photos2/m5.jpeg" width="100" alt="">                       
-                        <img class="photo photo16" src="images/photos2/m6.jpeg" width="100" alt="">
+                        <img class="photo photo15" src="/pages_artisans/maquette/images/photos2/m5.jpeg" width="100" alt="">                       
+                        <img class="photo photo16" src="/pages_artisans/maquette/images/photos2/m6.jpeg" width="100" alt="">
                     </p>
                     <p class="services__lambda_photos">
-                        <img class="photo photo17" src="images/photos2/m7.jpeg"  width="100" alt="">                   
-                        <img class="photo photo18" src="images/photos2/m8.jpeg"  width="100" alt="">
+                        <img class="photo photo17" src="/pages_artisans/maquette/images/photos2/m7.jpeg"  width="100" alt="">                   
+                        <img class="photo photo18" src="/pages_artisans/maquette/images/photos2/m8.jpeg"  width="100" alt="">
                     </p>
                     <p class="services__lambda_photos">
-                        <img class="photo photo19" src="images/photos2/m9.jpeg"  width="100" alt="">                       
-                        <img class="photo photo20" src="images/photos2/m10.jpeg" width="100" alt="">
+                        <img class="photo photo19" src="/pages_artisans/maquette/images/photos2/m9.jpeg"  width="100" alt="">                       
+                        <img class="photo photo20" src="/pages_artisans/maquette/images/photos2/m10.jpeg" width="100" alt="">
                     </p>                  
                 </div>       
             </section>   

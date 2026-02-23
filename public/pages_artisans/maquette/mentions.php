@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../assets/reset.css" class="css">
-    <link rel="stylesheet" href="../../assets/assets_artisans/style.css" class="css">
+    <link rel="stylesheet" href="/pages_artisans/css/reset.css" class="css">
+    <link rel="stylesheet" href="/pages_artisans/css/style.css" class="css">
     <title>Ypria - Mentions Légales</title>
 </head>
 <body id="body">  
@@ -64,7 +64,7 @@
     </main>
     <div class="en-tete__contact">
         <div class="button" >
-            <img class="en-tete__contact_icone" src="../../assets/icones/telephone.svg" alt=""> 
+            <img class="en-tete__contact_icone" src="/pages_artisans/icones/telephone.svg" alt=""> 
             <a class="en-tete__contact-text" href="index.php">             
                 Retour
             </a>

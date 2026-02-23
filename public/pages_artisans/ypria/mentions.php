@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/reset.css" class="css">
-    <link rel="stylesheet" href="../css/style.css" class="css">
+    <link rel="stylesheet" href="/pages_artisans/css/reset.css" class="css">
+    <link rel="stylesheet" href="/pages_artisans/css/style.css" class="css">
     <title>Ypria - Mentions Légales</title>
 </head>
 <body class="june">  
