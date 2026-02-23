@@ -1,58 +1,77 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Simple</title>
-    <link rel="stylesheet" href="assets/reset.css">
-    <link rel="stylesheet" href="assets/vap/style.css">
-</head>
-<body>
+<?php
+declare(strict_types=1);
 
+$domain = "votreartisanpro.fr";
+$host = strtolower($_SERVER['HTTP_HOST'] ?? '');
 
-<div class="logo">
-    <img src="assets/vap/logoAP.png" alt="Logo votre artisan pro, bleu et orange" >
-</div>
-<h1>Votre site professionnel clé en main pour votre activité artisanale</h1>
-<h2>En ligne en 24h – Simple, fiable, sans compétence technique</h2>
-<br><p>Tarif abordable et pas de coûts cachés</p><br><br>
-<h2>En construction</h2>
-<!--<button>Je crée mon site maintenant</button>-->
-<!--    ******FORMULAIRE DE CONTACT *******-->
+// Domaine principal
+if ($host === $domain || $host === "www.$domain") {
+    require "home.php";
+    exit;
+}
 
+// Extraction sous-domaine
+$subdomain = str_replace(".$domain", "", $host);
 
-            <form id="contact" class="form-container" novalidate>
-    <h2>Contactez-moi</h2>
+// Validation stricte du sous-domaine
+if (!preg_match('/^[a-z0-9\-]{2,50}$/', $subdomain)) {
+    http_response_code(404);
+    exit("Artisan non trouvé.");
+}
 
-    <div class="form-group">
-        <label for="nom">Nom</label>
-        <input type="text" id="nom" name="nom" required>
-    </div>
+// Chemin cache HTML
+$cacheDir = __DIR__ . "/cache/";
+$cacheFile = $cacheDir . $subdomain . ".html";
+$cacheDuration = 3600; // 1 heure
 
-    <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-    </div>
+if (!is_dir($cacheDir)) mkdir($cacheDir, 0755, true);
 
-    <div class="form-group">
-        <label for="subject">Sujet</label>
-        <input type="text" id="subject" name="subject" required>
-    </div>
+// Serve le cache si valide
+if (file_exists($cacheFile) && (time() - filemtime($cacheFile)) < $cacheDuration) {
+    readfile($cacheFile);
+    exit;
+}
 
-    <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" required></textarea>
-    </div>
+// ======================
+// Définition artisan (temporaire)
+// Plus tard remplacer par DB
+// ======================
+$artisans = [
+    "ypria" => [
+        "nom" => "Ypria Couverture",
+        "ville" => "Paris",
+        "metier" => "Couvreur",
+        "telephone" => "06 00 00 00 01",
+        "description" => "Spécialiste toiture et rénovation."
+    ],
+    "maquette" => [
+        "nom" => "Maquette BTP",
+        "ville" => "Lyon",
+        "metier" => "Maçon",
+        "telephone" => "06 00 00 00 02",
+        "description" => "Travaux de maçonnerie générale."
+    ],
+    // Ajouter d’autres artisans ici
+];
 
-    <!-- Honeypot anti-spam -->
-    <input type="text" name="website" id="website" style="display:none">
+// Artisan existe ?
+if (!isset($artisans[$subdomain])) {
+    http_response_code(404);
+    require "404.php";
+    exit;
+}
 
-    <button type="submit">Envoyer</button>
+$data = $artisans[$subdomain];
 
-    <div id="form-response"></div>
-</form>
+// ======================
+// Génération page + cache
+// ======================
+ob_start();
+require "pages_artisans/template.php";
+$html = ob_get_clean();
 
-<script src="assets/vap/form.js"></script>
-            
-</body>
-</html>
+// Sauvegarde cache
+file_put_contents($cacheFile, $html);
+
+// Affiche
+echo $html;
