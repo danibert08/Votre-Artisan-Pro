@@ -52,7 +52,7 @@
     <div id="form-response"></div>
 </form>
 
-<script src="assets/vap/form.js"></script>
+<script src="/assets/vap/form.js"></script>
             
 </body>
 </html>

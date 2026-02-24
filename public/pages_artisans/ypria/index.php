@@ -236,6 +236,6 @@
             <a class="mentions-link" href="/pages_artisans/ypria/mentions_legales.php">Mentions légales</a>
         </footer>
     </div>
-    <script src="assets/vap/form.js"></script>
+    <script src="/assets/vap/form.js"></script>
 </body>
 </html>

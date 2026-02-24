@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
         e.preventDefault();
 
         const formData = new FormData(form);
-
+console.log(formData);
         fetch("http://votreartisanpro.fr/send_mail.php", {
             method: "POST",
             body: formData
