@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const formData = new FormData(form);
 console.log(formData);
-        fetch("https:/votreartisanpro.fr/send_mail.php", {
+        fetch("/send_mail.php", {
             method: "POST",
             body: formData
         })
