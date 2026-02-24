@@ -112,7 +112,7 @@ if ($sd === '') {
  * (ajoute tes artisans ici)
  */
 $artisanMap = [
-  'ypria' => 'ypria@votreartisanpro.fr',
+  'ypria' => 'apr.a3p@gmail.com',
   'labellepeinture'=> 'apr.a3p@gmail.com',
   'preprod' => 'informacc85@gmail.com',
 ];
