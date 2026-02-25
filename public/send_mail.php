@@ -317,7 +317,7 @@ try {
   $mail->Port       = (int)(getenv('SMTP_PORT') ?: 587);
 
   // From = ton domaine (celui du SMTP), Reply-To = client
-  $fromEmail = getenv('SMTP_FROM') ?: getenv('SMTP_USER');
+  $fromEmail = getenv('SMTP_FROM') ?: 'daniel@votreartisanpro.fr';
   $fromName  = getenv('SMTP_FROM_NAME') ?: 'VotreArtisanPro';
   $mail->setFrom($fromEmail, $fromName);
   $mail->addReplyTo($email, $nom);
@@ -335,18 +335,18 @@ try {
 
   $mail->send();
   echo json_encode(["status" => "success", "message" => "Message envoyé"]);
-// } catch (Exception $e) {
-//     http_response_code(500);
-//     echo json_encode(["status" => "error", "message" => "Erreur d'envoi"]);
-// }
-
-}catch (Exception $e) {
+} catch (Exception $e) {
     http_response_code(500);
-    echo json_encode([
-        "status" => "error",
-        "message" => "Erreur SMTP",
-        "debug" => $mail->ErrorInfo
-    ]);
+    echo json_encode(["status" => "error", "message" => "Erreur d'envoi"]);
 }
+
+// }catch (Exception $e) {
+//     http_response_code(500);
+//     echo json_encode([
+//         "status" => "error",
+//         "message" => "Erreur SMTP",
+//         "debug" => $mail->ErrorInfo
+//     ]);
+// }
 
 ?> 
