@@ -325,12 +325,11 @@ try {
   // $mail->addAddress($artisanEmail);
 
 $mail->isSMTP();
-$mail->Host       = 'smtp.hostinger.com';//getenv('SMTP_HOST');
-$mail->SMTPAuth   = true;
-$mail->Username   = 'daniel@votreartisanpro.fr';
-$mail->Password   = 'DanielJunia2025?';//getenv('SMTP_PASS');
-$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // ou SMTPS selon ton serveur
-$mail->Port       = 587; // ou 465 selon config
+$mail->Host       = getenv('SMTP_HOST');
+$mail->Username   = getenv('SMTP_USER');
+$mail->Password   = getenv('SMTP_PASS');
+$mail->Port       = (int)getenv('SMTP_PORT');
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 
 $mail->setFrom('daniel@votreartisanpro.fr', 'VotreArtisanPro');
 $mail->addReplyTo($email, $nom);  // email du client
