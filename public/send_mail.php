@@ -146,10 +146,10 @@ $data = [
         "email" => $email,
         "name"  => $nom
     ],
-    "subject" => "Demande via {$sd}.votreartisanpro.fr : {$sujet}",
+    "subject" => "Nouveau contact pour {$sd}",
     "textContent" =>
-        "Nouvelle demande via formulaire\n\n" .
-        "Artisan: {$sd}\n" .
+        "Demande envoyée depuis le formulaire de {$sd}.votreartisanpro.fr\n\n" .
+        "Objet : {$sujet}\n" .
         "Nom: {$nom}\n" .
         "Email: {$email}\n\n" .
         "Message:\n{$message}"
