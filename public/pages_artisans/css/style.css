@@ -241,6 +241,19 @@ textarea {
     min-height: 100px;
 }
 
+#form-response {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
                     /********************/
                     /*** Social media ***/
 

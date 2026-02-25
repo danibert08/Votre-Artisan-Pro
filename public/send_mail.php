@@ -120,7 +120,7 @@ function getSubdomainLabel(string $host): string {
 }
 
 $host = $_SERVER['HTTP_HOST'] ?? '';
-$sd   = getSubdomainLabel($host);
+$sd  = getSubdomainLabel($host);
 
 if ($sd === '') {
   echo json_encode(["status" => "error", "message" => "Sous-domaine artisan introuvable"]);
