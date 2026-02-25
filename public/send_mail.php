@@ -308,21 +308,34 @@ use PHPMailer\PHPMailer\Exception;
 $mail = new PHPMailer(true);
 
 try {
-  $mail->isSMTP();
-  $mail->Host       = getenv('SMTP_HOST');
-  $mail->SMTPAuth   = true;
-  $mail->Username   = getenv('SMTP_USER');
-  $mail->Password   = getenv('SMTP_PASS');
-  $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-  $mail->Port       = (int)(getenv('SMTP_PORT') ?: 587);
+  // $mail->isSMTP();
+  // $mail->Host       = getenv('SMTP_HOST');
+  // $mail->SMTPAuth   = true;
+  // $mail->Username   = getenv('SMTP_USER');
+  // $mail->Password   = getenv('SMTP_PASS');
+  // $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+  // $mail->Port       = (int)(getenv('SMTP_PORT') ?: 587);
 
-  // From = ton domaine (celui du SMTP), Reply-To = client
-  $fromEmail = getenv('SMTP_FROM') ?: 'daniel@votreartisanpro.fr';
-  $fromName  = getenv('SMTP_FROM_NAME') ?: 'VotreArtisanPro';
-  $mail->setFrom($fromEmail, $fromName);
-  $mail->addReplyTo($email, $nom);
+  // // From = ton domaine (celui du SMTP), Reply-To = client
+  // $fromEmail = getenv('SMTP_FROM') ?: getenv('SMTP_USER');
+  // $fromName  = getenv('SMTP_FROM_NAME') ?: 'VotreArtisanPro';
+  // $mail->setFrom($fromEmail, $fromName);
+  // $mail->addReplyTo($email, $nom);
 
-  $mail->addAddress($artisanEmail);
+  // $mail->addAddress($artisanEmail);
+
+$mail->isSMTP();
+$mail->Host       = getenv('SMTP_HOST');
+$mail->SMTPAuth   = true;
+$mail->Username   = 'daniel@votreartisanpro.fr';
+$mail->Password   = getenv('SMTP_PASS');
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // ou SMTPS selon ton serveur
+$mail->Port       = 587; // ou 465 selon config
+
+$mail->setFrom('daniel@votreartisanpro.fr', 'VotreArtisanPro');
+$mail->addReplyTo($email, $nom);  // email du client
+$mail->addAddress($artisanEmail);
+
 
   $mail->Subject = "Demande via {$sd}.votreartisanpro.fr : {$sujet}";
   $mail->Body =
@@ -335,18 +348,18 @@ try {
 
   $mail->send();
   echo json_encode(["status" => "success", "message" => "Message envoyé"]);
-} catch (Exception $e) {
-    http_response_code(500);
-    echo json_encode(["status" => "error", "message" => "Erreur d'envoi"]);
-}
-
-// }catch (Exception $e) {
+// } catch (Exception $e) {
 //     http_response_code(500);
-//     echo json_encode([
-//         "status" => "error",
-//         "message" => "Erreur SMTP",
-//         "debug" => $mail->ErrorInfo
-//     ]);
+//     echo json_encode(["status" => "error", "message" => "Erreur d'envoi"]);
 // }
+
+}catch (Exception $e) {
+    http_response_code(500);
+    echo json_encode([
+        "status" => "error",
+        "message" => "Erreur SMTP",
+        "debug" => $mail->ErrorInfo
+    ]);
+}
 
 ?> 
