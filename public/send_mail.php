@@ -106,36 +106,62 @@ if (!empty($_POST["website"])) {
 
 function getSubdomainLabel(string $host, string $root): string {
     $host = strtolower(trim($host));
-    $host = preg_replace('/:\d+$/', '', $host);
+    $host = preg_replace('/:\d+$/', '', $host); // enlève le port
 
-    if (!str_ends_with($host, '.' . $root)) return '';
+    if ($host === $root) {
+        return 'root'; // Domaine racine
+    }
+
+    if (!str_ends_with($host, '.' . $root)) {
+        return 'null'; // Origine invalide / hors domaine autorisé
+    }
 
     return substr($host, 0, -1 - strlen($root));
 }
 
+$allowedRoot = 'votreartisanpro.fr';
+
+if (empty($_SERVER['HTTP_ORIGIN'])) {
+    http_response_code(403);
+    exit(json_encode([
+        "status"=>"error",
+        "message"=>"Origine manquante"
+    ]));
+}
+
+$origin = $_SERVER['HTTP_ORIGIN'];
+$originHost = parse_url($origin, PHP_URL_HOST);
+
 $sd = getSubdomainLabel($originHost, $allowedRoot);
 
-if ($sd === '') {
-    echo json_encode(["status" => "error", "message" => "Sous-domaine artisan introuvable"]);
-    exit;
+if ($sd === 'null') {
+    http_response_code(403);
+    exit(json_encode([
+        "status"=>"error",
+        "message"=>"Sous-domaine artisan introuvable"
+    ]));
 }
 
 /* =========================
-   Mapping artisan -> email
-========================= */
+//    Mapping artisan -> email
+// ========================= */
 
 $artisanMap = [
     'ypria' => 'apr.a3p@gmail.com',
     'la-belle-peinture'=> 'apr.a3p@gmail.com',
     'preprod' => 'informacc85@gmail.com',
     'maquette' => 'daniel@votreartisanpro.fr',
+    'root' => 'daniel@votreartisanpro.fr', // domaine racine
 ];
 
 $artisanEmail = $artisanMap[$sd] ?? null;
 
 if (!$artisanEmail) {
-    echo json_encode(["status" => "error", "message" => "Aucun email configuré pour cet artisan"]);
-    exit;
+    http_response_code(500);
+    exit(json_encode([
+        "status"=>"error",
+        "message"=>"Aucun email configuré pour cet artisan"
+    ]));
 }
 
 /* =========================
