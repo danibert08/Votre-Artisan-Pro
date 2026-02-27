@@ -36,7 +36,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         fetch(API_URL, {
             method: "POST",
-            body: formData
+            body: formData,
+            credentials: "include"
         })
         .then(res => res.json())
         .then(data => {

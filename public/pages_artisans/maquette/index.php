@@ -1,3 +1,11 @@
+<?php
+    session_start();
+
+    if (empty($_SESSION['csrf_token'])) {
+        $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+    } 
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -205,6 +213,7 @@ Afin de vous proposer un **devis précis et au prix juste**, je me déplace dire
 
             <form id="contact" class="form-container">
                 <h2>Contactez-nous</h2>
+                <input type="hidden" name="csrf_token" value="<?= $_SESSION['csrf_token']; ?>">
                 <div class="form-group">
                     <label for="name">Nom</label>
                     <input type="text" id="name" name="nom" placeholder="Votre nom" required>

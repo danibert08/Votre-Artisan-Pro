@@ -1,10 +1,39 @@
 <?php 
     
+
+/*===================================
+En local on affiche les erreurs, en prod on les logs
+=====================================*/ 
+
+if ($appEnv === 'local') {
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
+} else {
+    error_reporting(E_ALL);
+    ini_set('display_errors', 0);
+}
+
+$appEnv = getenv('APP_ENV') ?: 'prod';
+
+/*====================================
+    Demarrage d'une session
+=====================================*/
+
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+if (empty($_SESSION['csrf_token'])) {
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+}
+
 /*=========================
 CORS sécurisé multi-sous-domaines
 ========================= */
 
-session_start();
+if (file_exists(__DIR__ . '/.env.local')) {
+    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+    $dotenv->load();
+}
 
 if (!isset($_SESSION['last_submit'])) {
     $_SESSION['last_submit'] = time();
@@ -16,28 +45,38 @@ if (!isset($_SESSION['last_submit'])) {
 }
 
 $allowedRoot = 'votreartisanpro.fr';
-$originHost = '';
 
-if (isset($_SERVER['HTTP_ORIGIN'])) {
-    $origin = $_SERVER['HTTP_ORIGIN'];
-    $originHost = parse_url($origin, PHP_URL_HOST);
-
-    // Autorise uniquement les sous-domaines de votreartisanpro.fr
-    if (preg_match('#^([a-z0-9-]+)\.' . preg_quote($allowedRoot, '#') . '$#', $originHost)) {
-        header("Access-Control-Allow-Origin: $origin");
-        header("Vary: Origin");
-    } else {
-        http_response_code(403);
-        echo json_encode(["status" => "error", "message" => "Origine non autorisée"]);
-        exit;
-    }
+if (empty($_SERVER['HTTP_ORIGIN'])) {
+    http_response_code(403);
+    exit(json_encode([
+        "status"=>"error",
+        "message"=>"Origine manquante"
+    ]));
 }
 
+$origin = $_SERVER['HTTP_ORIGIN'];
+$originHost = parse_url($origin, PHP_URL_HOST);
+
+if (
+    !$originHost ||
+    !preg_match(
+        '#^([a-z0-9-]+)\.' . preg_quote($allowedRoot, '#') . '$#',
+        $originHost
+    )
+) {
+    http_response_code(403);
+    exit(json_encode([
+        "status"=>"error",
+        "message"=>"Origine non autorisée"
+    ]));
+}
+
+header("Access-Control-Allow-Origin: $origin");
+header("Vary: Origin");
 header("Access-Control-Allow-Methods: POST, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type");
 header('Content-Type: application/json');
 
-// Gestion du preflight
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     http_response_code(204);
     exit;

@@ -1,3 +1,11 @@
+<?php
+    session_start();
+
+    if (empty($_SESSION['csrf_token'])) {
+        $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+    } 
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -21,9 +29,9 @@
 <!--    ******FORMULAIRE DE CONTACT *******-->
 
 
-            <form id="contact" class="form-container" novalidate>
+    <form id="contact" class="form-container" novalidate>
     <h2>Contactez-moi</h2>
-
+    <input type="hidden" name="csrf_token" value="<?= $_SESSION['csrf_token']; ?>">
     <div class="form-group">
         <label for="nom">Nom</label>
         <input type="text" id="nom" name="nom" required>
