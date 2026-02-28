@@ -355,17 +355,23 @@ function getSubdomainLabel(string $host, string $root): string {
     if ($host === $root) return 'root';
     if (!str_ends_with($host, '.' . $root)) return 'null';
 
-    // Extrait la partie avant le domaine racine
+    // 1. On récupère tout ce qui est avant "votreartisanpro.fr"
+    // Ex: "ypria.preprod" ou "proprios" ou "ypria"
     $subPart = substr($host, 0, -1 - strlen($root));
     $labels = explode('.', $subPart);
 
-    // LOGIQUE CORRIGÉE :
-    // Si on a "artisans.preprod", $labels[0] est "artisans" et $labels[1] est "preprod"
-    // On veut l'artisan réel, donc on prend le premier, SAUF si c'est le mot générique "artisans"
-    if ($labels[0] === 'artisans' && isset($labels[1])) {
-        return $labels[1]; 
+    // 2. On définit les mots-clés techniques à ignorer pour trouver l'artisan
+    $technicalKeywords = ['preprod', 'proprios', 'maquette', 'www'];
+
+    // 3. On cherche le premier label qui n'est PAS technique
+    foreach ($labels as $label) {
+        if (!in_array($label, $technicalKeywords)) {
+            return $label; // Retourne "ypria" même s'il y a ".preprod" après
+        }
     }
 
+    // 4. Si on n'a que des mots techniques (ex: preprod.votreartisanpro.fr)
+    // On retourne le premier label trouvé pour le mapping email
     return $labels[0]; 
 }
 
