@@ -196,30 +196,35 @@ curl_setopt_array($ch, [
 ========================= */
 $response = curl_exec($ch);
 $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+$curlError = curl_error($ch);
 curl_close($ch);
 
-// --- AJOUT SÉCURITÉ ICI ---
-// On vide tout ce qui a pu être écrit (espaces, warnings) avant
-while (ob_get_level()) {
+// --- SÉCURITÉ SORTIE ---
+// On mémorise si c'est un succès avant de nettoyer
+$isSuccess = ($response !== false && $httpCode === 201);
+
+// On vide les buffers parasites (espaces, warnings)
+while (ob_get_level() > 0) {
     ob_end_clean();
 }
 
+// On force les headers
 header('Content-Type: application/json; charset=utf-8');
-// Ré-envoi du header CORS ici pour être certain qu'il part avec le JSON
-header("Access-Control-Allow-Origin: $origin");
+header("Access-Control-Allow-Origin: " . ($_SERVER['HTTP_ORIGIN'] ?? '*'));
 header("Access-Control-Allow-Credentials: true");
 
-if ($response !== false && $httpCode === 201) {
+if ($isSuccess) {
     echo json_encode(["status" => "success"]);
 } else {
+    // Si ça échoue, on renvoie quand même un JSON pour que le JS affiche l'erreur
     http_response_code(500);
     echo json_encode([
         "status" => "error", 
-        "message" => "Erreur d'envoi",
-        "debug_code" => $httpCode
+        "message" => "Erreur d'envoi (Code: $httpCode)",
+        "debug" => $curlError ?: "Réponse Brevo incorrecte"
     ]);
 }
-exit; // On arrête tout pour que l'index.php ne rajoute rien derrière
+exit;
 ?>
 
  
