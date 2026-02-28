@@ -235,9 +235,11 @@
 
 
 
-/* =========================================
-   CONFIG ENVIRONNEMENT ET ERREURS
-========================================= */
+
+/* =========================
+   ENVIRONNEMENT & ERREURS
+========================= */
+
 $appEnv = getenv('APP_ENV') ?: 'prod';
 
 if ($appEnv === 'local') {
@@ -248,9 +250,9 @@ if ($appEnv === 'local') {
     ini_set('display_errors', 0);
 }
 
-/* =========================================
-   SESSION + CSRF TOKEN
-========================================= */
+/* =========================
+   SESSION & CSRF
+========================= */
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
@@ -259,17 +261,9 @@ if (empty($_SESSION['csrf_token'])) {
     $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
 }
 
-/* =========================================
-   CHARGEMENT .env LOCAL
-========================================= */
-if (file_exists(__DIR__ . '/.env.local')) {
-    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-    $dotenv->load();
-}
-
-/* =========================================
-   CORS MULTI-SOUS-DOMAINES
-========================================= */
+/* =========================
+   CORS MULTI-SOUS-DOMAINE
+========================= */
 $allowedRoot = 'votreartisanpro.fr';
 $origin = $_SERVER['HTTP_ORIGIN'] ?? '';
 
@@ -284,72 +278,58 @@ if ($origin) {
         header('Content-Type: application/json');
     } else {
         http_response_code(403);
-        echo json_encode(["status"=>"error","message"=>"Origine non autorisée"]);
+        echo json_encode(["status" => "error", "message" => "Origine non autorisée"]);
         exit;
     }
 } else {
     http_response_code(403);
-    echo json_encode(["status"=>"error","message"=>"Origine manquante"]);
+    echo json_encode(["status" => "error", "message" => "Origine manquante"]);
     exit;
 }
 
-// OPTIONS preflight
+// Gestion preflight OPTIONS
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     http_response_code(204);
     exit;
 }
 
-/* =========================================
-   VÉRIFICATION MÉTHODE
-========================================= */
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    echo json_encode(["status"=>"error","message"=>"Méthode non autorisée"]);
-    exit;
-}
-
-/* =========================================
-   ANTI-SPAM HONEYPOT
-========================================= */
-if (!empty($_POST["website"])) {
-    echo json_encode(["status"=>"error","message"=>"Spam détecté"]);
-    exit;
-}
-
-/* =========================================
-   ANTI-FLOOD SIMPLE
-========================================= */
+/* =========================
+   Anti-spam & Throttle
+========================= */
 if (!isset($_SESSION['last_submit'])) {
     $_SESSION['last_submit'] = time();
+} elseif (time() - $_SESSION['last_submit'] < 10) {
+    echo json_encode(["status"=>"error","message"=>"Trop rapide"]);
+    exit;
 } else {
-    if (time() - $_SESSION['last_submit'] < 10) {
-        exit(json_encode(["status"=>"error","message"=>"Trop rapide"]));
-    }
     $_SESSION['last_submit'] = time();
 }
 
-/* =========================================
-   EXTRACTION ARTISAN VIA ORIGIN
-========================================= */
+if (!empty($_POST["website"])) { // honeypot
+    echo json_encode(["status" => "error", "message" => "Spam détecté"]);
+    exit;
+}
+
+/* =========================
+   Sous-domaine / mapping artisan
+========================= */
 function getSubdomainLabel(string $host, string $root): string {
     $host = strtolower(trim($host));
-    $host = preg_replace('/:\d+$/', '', $host); // enlève le port
+    $host = preg_replace('/:\d+$/', '', $host);
 
     if ($host === $root) return 'root';
     if (!str_ends_with($host, '.' . $root)) return 'null';
-
     return substr($host, 0, -1 - strlen($root));
 }
 
-$sd = getSubdomainLabel($originHost, $allowedRoot);
+$sd = getSubdomainLabel(parse_url($origin, PHP_URL_HOST), $allowedRoot);
 
 if ($sd === 'null') {
     http_response_code(403);
-    exit(json_encode(["status"=>"error","message"=>"Sous-domaine artisan introuvable"]));
+    echo json_encode(["status"=>"error","message"=>"Sous-domaine artisan introuvable"]);
+    exit;
 }
 
-/* =========================================
-   MAPPING ARTISAN -> EMAIL
-========================================= */
 $artisanMap = [
     'ypria' => 'apr.a3p@gmail.com',
     'la-belle-peinture'=> 'apr.a3p@gmail.com',
@@ -359,51 +339,53 @@ $artisanMap = [
 ];
 
 $artisanEmail = $artisanMap[$sd] ?? null;
+
 if (!$artisanEmail) {
     http_response_code(500);
-    exit(json_encode(["status"=>"error","message"=>"Aucun email configuré pour cet artisan"]));
+    echo json_encode(["status"=>"error","message"=>"Aucun email configuré pour cet artisan"]);
+    exit;
 }
 
-/* =========================================
-   VALIDATION FORMULAIRE
-========================================= */
-$nom     = htmlspecialchars(trim($_POST["nom"] ?? ''), ENT_QUOTES, 'UTF-8');
-$email   = htmlspecialchars(trim($_POST["email"] ?? ''), ENT_QUOTES, 'UTF-8');
-$sujet   = htmlspecialchars(trim($_POST["subject"] ?? ''), ENT_QUOTES, 'UTF-8');
-$message = htmlspecialchars(trim($_POST["message"] ?? ''), ENT_QUOTES, 'UTF-8');
+/* =========================
+   Validation formulaire
+========================= */
+$nom     = trim($_POST["nom"] ?? '');
+$email   = trim($_POST["email"] ?? '');
+$sujet   = trim($_POST["subject"] ?? '');
+$message = trim($_POST["message"] ?? '');
 
-if (empty($nom) || empty($email) || empty($sujet) || empty($message)) {
+if (!$nom || !$email || !$sujet || !$message) {
     echo json_encode(["status"=>"error","message"=>"Tous les champs sont obligatoires"]);
     exit;
 }
+
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     echo json_encode(["status"=>"error","message"=>"Email invalide"]);
     exit;
 }
 
-/* =========================================
-   ENVOI MAIL VIA BREVO API
-========================================= */
+$nom     = htmlspecialchars($nom, ENT_QUOTES, 'UTF-8');
+$sujet   = htmlspecialchars($sujet, ENT_QUOTES, 'UTF-8');
+$message = htmlspecialchars($message, ENT_QUOTES, 'UTF-8');
+
+/* =========================
+   Envoi mail via Brevo
+========================= */
 $apiKey = getenv('BREVO_API_KEY');
+
 if (!$apiKey) {
     http_response_code(500);
     exit(json_encode(["status"=>"error","message"=>"Config serveur invalide"]));
 }
 
 $data = [
-    "sender" => [
-        "name" => "VotreArtisanPro",
-        "email" => "daniel@votreartisanpro.fr"
-    ],
-    "to" => [
-        ["email" => $artisanEmail]
-    ],
-    "replyTo" => [
-        "email" => $email,
-        "name"  => $nom
-    ],
+    "sender" => ["name"=>"VotreArtisanPro","email"=>"daniel@votreartisanpro.fr"],
+    "to" => [["email"=>$artisanEmail]],
+    "replyTo" => ["email"=>$email,"name"=>$nom],
     "subject" => "Nouveau contact pour {$sd}",
-    "textContent" => "Demande depuis {$sd}.votreartisanpro.fr\nObjet: {$sujet}\nNom: {$nom}\nEmail: {$email}\nMessage:\n{$message}"
+    "textContent" =>
+        "Demande depuis le formulaire de {$sd}.votreartisanpro.fr\n\n" .
+        "Objet : {$sujet}\nNom: {$nom}\nEmail: {$email}\n\nMessage:\n{$message}"
 ];
 
 $ch = curl_init("https://api.brevo.com/v3/smtp/email");
@@ -417,19 +399,19 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
 
 $response = curl_exec($ch);
+$httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+
 if ($response === false) {
     error_log(curl_error($ch));
     echo json_encode(["status"=>"error","message"=>"Erreur technique"]);
     exit;
 }
 
-$httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 if ($httpCode === 201) {
-    echo json_encode(["status"=>"success"]);
+    echo json_encode(["status"=>"success","message"=>"Message envoyé !"]);
 } else {
     error_log("Brevo error HTTP $httpCode: $response");
     echo json_encode(["status"=>"error","message"=>"Erreur d'envoi"]);
 }
 ?>
-
  
