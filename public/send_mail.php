@@ -324,14 +324,27 @@ if (!empty($_POST["website"])) {
 /* =========================
    Extraire sous-domaine
 ========================= */
+// function getSubdomainLabel(string $host, string $root): string {
+//     $host = strtolower(trim($host));
+//     $host = preg_replace('/:\d+$/', '', $host);
+
+//     if ($host === $root) return 'root';
+//     if (!str_ends_with($host, '.' . $root)) return 'null';
+
+//     return substr($host, 0, -1 - strlen($root));
+// }
+
 function getSubdomainLabel(string $host, string $root): string {
     $host = strtolower(trim($host));
-    $host = preg_replace('/:\d+$/', '', $host);
+    $host = preg_replace('/:\d+$/', '', $host); // enlève le port
 
-    if ($host === $root) return 'root';
+    if ($host === $root) return 'root'; // domaine racine
+
     if (!str_ends_with($host, '.' . $root)) return 'null';
 
-    return substr($host, 0, -1 - strlen($root));
+    // Extrait juste le premier label du sous-domaine
+    $labels = explode('.', substr($host, 0, -1 - strlen($root)));
+    return $labels[0]; // 'ypria' dans ypria.preprod.votreartisanpro.fr
 }
 
 $sd = getSubdomainLabel($originHost, $allowedRoot);
