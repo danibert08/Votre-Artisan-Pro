@@ -53,23 +53,25 @@ $_SESSION['last_submit'] = time();
 ========================= */
 
 $allowedRoot = 'votreartisanpro.fr';
-
 $origin = $_SERVER['HTTP_ORIGIN'] ?? '';
 $originHost = parse_url($origin, PHP_URL_HOST) ?: '';
 
+// On vérifie si l'origine finit par notre domaine (ex: ypria.votreartisanpro.fr)
 if ($originHost === $allowedRoot || str_ends_with($originHost, '.' . $allowedRoot)) {
+    // CRUCIAL : On renvoie l'origine exacte qui a fait la requête
     header("Access-Control-Allow-Origin: $origin");
     header("Access-Control-Allow-Credentials: true");
     header("Vary: Origin");
     header("Access-Control-Allow-Methods: POST, OPTIONS");
-    header("Access-Control-Allow-Headers: Content-Type, X-CSRF-Token");
-    header('Content-Type: application/json');
+    header("Access-Control-Allow-Headers: Content-Type, X-CSRF-Token, X-Requested-With");
 } else {
-    http_response_code(403);
-    exit(json_encode(["status"=>"error","message"=>"Origine non autorisée"]));
+    // Si on est ici, le navigateur bloquera la requête
+    header("Content-Type: application/json");
+    echo json_encode(["status" => "error", "message" => "Origine non autorisée : $originHost"]);
+    exit;
 }
 
-// Preflight OPTIONS
+// Toujours répondre 204 aux requêtes OPTIONS (Preflight)
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     http_response_code(204);
     exit;
