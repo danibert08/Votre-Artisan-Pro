@@ -62,12 +62,12 @@
         </div>
     </main>
     <div class="en-tete__contact">
-                <div class="button">
-                    <img class="en-tete__contact_icone" src="/pages_artisans/icones/telephone.svg" alt=""> 
-                    <a class="en-tete__contact-text" href="/pages_artisans/la-belle-peinture/index.php">             
-                        Retour 
-                    </a>
-                </div>
-            </div>
+        <div class="button">
+            <img class="en-tete__contact_icone" src="/pages_artisans/icones/telephone.svg" alt=""> 
+            <a class="en-tete__contact-text" href="/pages_artisans/la-belle-peinture/index.php">             
+                Retour 
+            </a>
+        </div>
+    </div>
 </body>
 </html>
