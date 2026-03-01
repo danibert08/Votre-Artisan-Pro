@@ -255,10 +255,9 @@ Que ce soit pour une urgence, une rénovation ou une mise en conformité gaz, je
             </nav>
         </main>
         <footer class="footer-nav">
-            <a class="mentions-link" href="/pages_artisans/maquette/mentions_legales.php">Mentions légales</a>
+            <a class="mentions-link" href="/pages_artisans/aps/mentions_legales.php">Mentions légales</a>
         </footer>
     </div>
-    <script src="pages_artisans/maquette/theme.js" module="javascript" ></script>
     <script src="/assets/vap/form.js"></script>
 </body>
 </html>
