@@ -233,13 +233,13 @@ Que ce soit pour une urgence, une rénovation ou une mise en conformité gaz, je
             <div class="socialmedia">
                 <p class="socialmedia-title">Pour me suivre :</p>
                 <div class="socialmedia-icons">
-                    <a class="socialmedia-link insta"  href="https://www.instagram.com/ypria_beauty?igsh=MWw1ZDdpdHQ1NjJnOQ==">             
+                    <a class="socialmedia-link insta"  href="#">             
                         <img class="socialmedia-img" src="/pages_artisans/icones/icons8-instagram-48.svg"  alt=""> 
                     </a>
-                    <a class="socialmedia-link tictac"  href="https://www.tiktok.com/@ypria_?_r=1&_t=ZN-93t81PboCjD">             
+                    <a class="socialmedia-link tictac"  href="#">             
                         <img class="socialmedia-img" src="/pages_artisans/icones/icons8-tic-tac-50.svg" alt=""> 
                     </a>
-                    <a class="socialmedia-link fbook"  href="https://www.facebook.com/share/14VhSsPpgAV/?mibextid=wwXIfr">             
+                    <a class="socialmedia-link fbook"  href="#">             
                         <img class="socialmedia-img" src="/pages_artisans/icones/icons8-facebook-48.svg"  alt=""> 
                     </a>
                 </div>
