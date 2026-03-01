@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/pages_artisans/css/style.css" class="css">
     <title> APS - Mentions Légales</title>
 </head>
-<body class="june">  
+<body class="orange">  
     <main class="mentions">
         <h1>Mentions légales</h1><br>
         <div>
