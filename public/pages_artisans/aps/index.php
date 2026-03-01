@@ -109,14 +109,7 @@ Chauffage : Optimisation de vos circuits d'eau chaude.                    </p>
                         <img class="photo photo6" src="/pages_artisans/aps/images/photos1/m6.jpeg" width="100" alt="">
                     </p>
                 </div>
-                <div class="en-tete__contact">
-                <div id="services2" class="button" >
-                    <img class="en-tete__contact_icone" src="/pages_artisans/icones/telephone.svg" alt=""> 
-                    <a class="en-tete__contact-text" href="tel:+33745063458">             
-                        07 45 06 34 58 
-                    </a>
-                </div>
-            </div>
+                
 
                                 <!--     Services N°2     -->
 
@@ -150,7 +143,14 @@ Chauffage : Optimisation de vos circuits d'eau chaude.                    </p>
                     </p>                  
                 </div>  -->     
             </section>   
-
+            <div class="en-tete__contact">
+                <div id="services2" class="button" >
+                    <img class="en-tete__contact_icone" src="/pages_artisans/icones/telephone.svg" alt=""> 
+                    <a class="en-tete__contact-text" href="tel:+33745063458">             
+                        07 45 06 34 58 
+                    </a>
+                </div>
+            </div>
                          <!--   Google map. -->
 
             <div class="map">
