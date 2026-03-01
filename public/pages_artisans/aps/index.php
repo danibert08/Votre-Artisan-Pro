@@ -248,7 +248,7 @@ Que ce soit pour une urgence, une rénovation ou une mise en conformité gaz, je
                 <ul class="nav-links">
                     <li><a href="#accueil">Accueil</a></li>
                     <li><a href="#services1">Services 1</a></li>
-                    <li><a href="#services2">Services 2</a></li>
+                    <!--<li><a href="#services2">Services 2</a></li>-->
                     <li><a href="#whoami">Qui suis-je</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
