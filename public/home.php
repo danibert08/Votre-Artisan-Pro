@@ -17,50 +17,62 @@
 </head>
 <body>
 
+    <header>
+        <div class="logo">
+            <img src="assets/vap/logoAP.png" alt="Logo votre artisan pro, bleu et orange" >
+        </div>
+    </header>
+    <main>
 
-<div class="logo">
-    <img src="assets/vap/logoAP.png" alt="Logo votre artisan pro, bleu et orange" >
-</div>
-<h1>Votre site professionnel clé en main pour votre activité artisanale</h1>
-<h2>En ligne en 24h – Simple, fiable, sans compétence technique</h2>
-<br><p>Tarif abordable et pas de coûts cachés</p><br><br>
-<h2>En construction</h2>
+        <div>
+            <h1>Votre site professionnel clé en main pour votre activité artisanale</h1><br><br>
+            <h2>Nous vous simplifions la tâche :</h2><br><br>
+            <br><p>Un site pour votre activité, adapté à tous les écrans, simple, efficace, prêt à l’emploi,
+            et optimisé pour le référencement google</p><br><br>
+            <p>**************</p><br>
+            <p><u>Tarif unique sans coûts cachés :</u></p><br><br>
+            <p>Une seule fois 79€ ttc pour la réalisation</p><br>
+            <p>12,99€/mois ttc pour l'hébergement, la maintenance, les petites modifications, les mises a jour</p><br>
+            <p>**************</p>
+        </div>
 
-<!--<button>Je crée mon site maintenant</button>-->
-<!--    ******FORMULAIRE DE CONTACT *******-->
 
 
-    <form id="contact" class="form-container" novalidate>
-    <h2>Contactez-moi</h2>
-    <input type="hidden" name="csrf_token" value="<?= $_SESSION['csrf_token']; ?>">
-    <div class="form-group">
-        <label for="nom">Nom</label>
-        <input type="text" id="nom" name="nom" required>
-    </div>
+        <!--<button>Je crée mon site maintenant</button>-->
+        <!--    ******FORMULAIRE DE CONTACT *******-->
 
-    <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-    </div>
 
-    <div class="form-group">
-        <label for="subject">Sujet</label>
-        <input type="text" id="subject" name="subject" required>
-    </div>
+        <form id="contact" class="form-container" novalidate>
+            <h2>Contactez-moi</h2>
+            <input type="hidden" name="csrf_token" value="<?= $_SESSION['csrf_token']; ?>">
+            <div class="form-group">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
 
-    <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" required></textarea>
-    </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
 
-    <!-- Honeypot anti-spam -->
-    <input type="text" name="website" id="website" style="display:none">
+            <div class="form-group">
+                <label for="subject">Sujet</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
 
-    <button type="submit">Envoyer</button>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
 
-    <div id="form-response"></div>
-</form>
+            <!-- Honeypot anti-spam -->
+            <input type="text" name="website" id="website" style="display:none">
 
+            <button type="submit">Envoyer</button>
+
+            <div id="form-response"></div>
+        </form>
+    </main>
 <script src="/assets/vap/form.js"></script>
             
 </body>
