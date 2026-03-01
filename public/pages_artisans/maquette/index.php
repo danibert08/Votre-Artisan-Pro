@@ -11,14 +11,16 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex"><!-- A retirer pour chaque artisan -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="[Maquette] vous présente son activité de [votre activité]" />
     <?php
         $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https" : "http";
         $host = $_SERVER['HTTP_HOST'];
         $canonical_url = $protocol . "://" . $host . "/";
     ?>
     <link rel="canonical" href="<?= $canonical_url; ?>" />
-    <title>Maquette</title>
+    <title>Maquette : votre ....</title>
     <link rel="stylesheet" href="/pages_artisans/css/reset.css" class="css">
     <link rel="stylesheet" href="/pages_artisans/css/style.css" class="css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
