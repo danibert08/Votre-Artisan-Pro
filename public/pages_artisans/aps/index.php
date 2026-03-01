@@ -85,7 +85,7 @@
                                 <!--       Services  N°1   -->
 
                 <div  class="services__lambda">
-                    <h2  class="services__lambda_title">PLOMBERIE EAU ET GAZ</h2>
+                    <h2  class="services__lambda_title">Plomberie Gaz et Eau</h2>
                     <p class="services__lambda_text">
 Besoin d'une installation fiable ou d'un dépannage urgent ? Spécialisé dans les travaux d'installation d'eau et de gaz, je mets mon savoir-faire au service de vos projets de construction et de rénovation.
 De la conception de votre salle de bain à la pose de réseaux de gaz complexes, j’assure une exécution rigoureuse respectant les normes de sécurité les plus strictes. Mon objectif est simple : vous garantir des installations durables, une consommation optimisée et une tranquillité d'esprit totale.
