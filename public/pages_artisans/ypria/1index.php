@@ -27,6 +27,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
 </head>
 <body id="body" class="june">
+    <?php echo "Le chemin réel est : " . $_SERVER['REQUEST_URI']; ?>
     <div class="container">
         <nav class="navbar navbar-top">      
             <ul class="nav-links">
