@@ -1,5 +1,5 @@
 {
-  "dossier": "",
+  "dossier": "1_modele",
   "nom": "",
   "prenom" : "",
   "nom_commercial" : "",
@@ -12,15 +12,15 @@
   "rue": "",
   "ville": "",
   "google_map": "",
-  "theme_couleur": "",
+  "theme_couleur": "grey",
   "tag_title": "",
-  "image_hero": "dossier/images/hero/h1.jpeg",
-  "image_logo": "dossier/images/logo/logo.jpeg",
+  "image_hero": "images/hero/h1.jpeg",
+  "image_logo": "images/logo/logo.jpeg",
   "tiktok": "",
   "instagram": "",
   "facebook": "",
   
-  "services": "Services",
+  "services": "Mes services",
   "sections": [
     {
       "id":"1",
