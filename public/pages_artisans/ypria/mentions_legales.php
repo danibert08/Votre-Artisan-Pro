@@ -13,12 +13,13 @@
     
     // 1. URL Canonique (racine du domaine en HTTPS)
     $canonical_url = "https://" . $host . "/";
-
-    // 2. Chemin vers le dossier actuel de l'artisan
-    $currentDir = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/\\');
     
-    // 3. URL de base pour toutes les ressources relatives (images, etc.)
-    $baseUrl = "https://" . $host . $currentDir . "/";
+    // 2. On récupère le chemin vers le dossier actuel (ex: /pages_artisans/ypria/)
+    $currentPath = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/\\') . '/';
+
+    // 3. On récupère le chemin mais on retire "public" s'il est présent dans l'URL
+    $baseUrl = str_replace('/public/', '/', dirname($_SERVER['SCRIPT_NAME']));
+    $baseUrl = rtrim($baseUrl, '/') . '/'; 
     ?>
 <!DOCTYPE html>
 <html lang="fr">
