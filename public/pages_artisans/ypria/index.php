@@ -22,8 +22,10 @@
     // 2. On récupère le chemin vers le dossier actuel (ex: /pages_artisans/ypria/)
     $currentPath = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/\\') . '/';
 
-    // 3. On utilise un chemin relatif à la racine du domaine pour éviter les problèmes HTTPS
-    $baseUrl = $currentPath;
+    // 3. On récupère le chemin mais on retire "public" s'il est présent dans l'URL
+    $baseUrl = str_replace('/public/', '/', dirname($_SERVER['SCRIPT_NAME']));
+    $baseUrl = rtrim($baseUrl, '/') . '/'; 
+
 ?>
 
 <!DOCTYPE html>
