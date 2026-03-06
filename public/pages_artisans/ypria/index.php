@@ -68,11 +68,11 @@
 
             <div id="accueil" class="en-tete">
                 <div class="en-tete__hero">
-                    <img class="en-tete__hero_hero-img" src="<?= $data['image_hero'];?>"  alt="" >
+                    <img class="en-tete__hero_hero-img" src="/pages_artisans/<?= $data['dossier'] ?>/<?= $data['image_hero'];?>"  alt="" >
                 </div>
                 <?php  if(!empty($data['image_logo'])) 
          echo  '<div class="en-tete__logo">
-                    <img class="en-tete__logo_logo-img" src="'. $data['image_logo'] . '"  alt="">
+                    <img class="en-tete__logo_logo-img" src="/pages_artisans/'. $data['dossier'] . '/' . $data['image_logo'] . '"  alt="">
                 </div>' ?>
             </div>
 
