@@ -122,8 +122,8 @@
                         <img class="photo photo2" src="<?= $section['dossier_photos'] ?>/m2.jpeg"  width="100" alt="">
                     </p>
                     <p class="services__lambda_photos">
-                        <img class="photo photo4" src="images/<?= $section['dossier_photos'] ?>/m4.jpeg" width="100" alt="">
-                        <img class="photo photo3" src="images/<?= $section['dossier_photos'] ?>/m3.jpeg"  width="100" alt="">                  
+                        <img class="photo photo4" src="pages_artisans/ypria/images/<?= $section['dossier_photos'] ?>/m4.jpeg" width="100" alt="">
+                        <img class="photo photo3" src="/pages_artisans/ypria/images/<?= $section['dossier_photos'] ?>/m3.jpeg"  width="100" alt="">                  
                     </p>
                     <p class="services__lambda_photos">
                         <img class="photo photo5" src="images/<?= $section['dossier_photos'] ?>/m5.jpeg" width="100" alt="">                    
