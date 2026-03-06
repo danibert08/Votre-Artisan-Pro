@@ -19,7 +19,7 @@
         $canonical_url = $protocol . "://" . $host . "/";
     ?>
     <?php
-        $json_path = __DIR__ . 'datas.json';
+        $json_path = __DIR__ . '/datas.json';
         $data = [];
 
     if (file_exists($json_path)) {
