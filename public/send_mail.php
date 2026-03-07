@@ -141,7 +141,8 @@ $artisanMap = [
     'preprod' => 'informacc85@gmail.com',
     'maquette' => 'daniel@votreartisanpro.fr',
     'root' => 'daniel@votreartisanpro.fr',
-    'aps' => 'daniel@votreartisanpro.fr'
+    'aps' => 'daniel@votreartisanpro.fr',
+    'ruchaud' => 'daniel@votreartisanpro.fr',
 ];
 
 $artisanEmail = $artisanMap[$sd] ?? null;

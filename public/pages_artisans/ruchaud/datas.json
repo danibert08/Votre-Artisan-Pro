@@ -1,0 +1,46 @@
+{
+  "dossier": "ruchaud",
+  "nom": "Ruchaud",
+  "prenom" : "Sébastien",
+  "nom_commercial" : "Ruchaud Père et Fils",
+  "metier": "SERRURIER - METALLIER",
+  "commune": "LES SABLES D'OLONNE",
+  "telephone" : "0622541722",
+  "mail" : "serrurerie.ruchaud85@sfr.fr",
+  "forme_juridique": "SARL",
+  "siren": "484539572",
+  "rue": "19 Rue Jacquard",
+  "ville": "85100 Les Sables d'Olonne",
+  "google_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43950.50400826823!2d-1.8074474191036312!3d46.490163800000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48046830eb392405%3A0xc5964c4f3f8da6df!2sRuchaud%20p%C3%A8re%20et%20fils!5e0!3m2!1sfr!2suk!4v1772891022460!5m2!1sfr!2suk",
+  "theme_couleur": "grey",
+  "tag_title": "Ruchaud Père et Fils : travaux de menuiserie métallique et serrurerie",
+  "image_hero": "images/hero/h1.jpeg",
+  "image_logo": "images/logo/logo.png",
+  "tiktok": "",
+  "instagram": "",
+  "facebook": "https://www.facebook.com/profile.php?id=100070298440800",
+  
+  "services": "Nos services",
+  "sections": [
+    {
+      "id":"1",
+      "activite": "Serrurier - Métallier",
+      "text": "Titre : Le métal sur-mesure : Quand la forge devient design.<br> Le métal ne se contente pas d'être solide, il peut être élégant. <br>Artisan serrurier-métallier, je transforme l'acier, l'inox et l'aluminium en pièces uniques adaptées à votre architecture. Ferronnerie : Portails, pergolas et mobilier industriel. <br>Aménagement : Verrières de style atelier et escaliers suspendus. Sécurité : Portes techniques et dispositifs de protection robustes. <br>Chaque projet est une nouvelle page blanche que nous dessinons ensemble pour donner du caractère à votre patrimoine.",
+      "dossier_photos": "photos1"
+    }
+  
+  ],
+
+  "price":{
+    "price_first_title": "Paiement",
+    "price_second_title": "Tarif",
+    "price_text": "Afin de vous proposer un devis précis et au prix juste, je me déplace directement sur place     pour évaluer votre projet. Cette visite me permet d’analyser les surfaces, l’état des supports et les éventuelles contraintes techniques, afin d'établir une estimation détaillée et sans surprise.<br><br>Chaque chantier étant unique, ce rendez-vous est essentiel pour vous garantir un tarif maîtrisé, adapté à vos besoins et à votre budget. Mon engagement : transparence, conseils personnalisés et respect du prix annoncé."
+  },
+  "whoami":{
+    "whoami_first_title":"Qui sommes nous ?",
+    "whoami_text":"Une entreprise familiale. Un savoir faire de qualité transmis de père en fils."
+  }
+
+  
+
+}

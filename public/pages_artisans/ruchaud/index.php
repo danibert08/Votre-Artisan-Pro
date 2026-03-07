@@ -60,7 +60,7 @@
                        <?php endforeach;  
                         if (count($data['sections']) <= 2)                      
                             {   ?>                        
-                                <li><a href="#whoami" onclick="document.getElementById('whoami').scrollIntoView({behavior: 'smooth'}); return false;">Qui suis-je</a></li>
+                                <li><a href="#whoami" onclick="document.getElementById('whoami').scrollIntoView({behavior: 'smooth'}); return false;">Qui sommes-nous ?</a></li>
                         <?php 
                             }        
                         ?>                                
@@ -73,7 +73,7 @@
 
             <div id="accueil" class="en-tete">
                 <div class="en-tete__hero">
-                    <img class="en-tete__hero_hero-img" src="/pages_artisans/<?= $data['dossier'] ?>/<?= $data['image_hero'];?>"  alt="" >
+                    <img class="en-tete__hero_hero-img" src="/pages_artisans/<?= $data['dossier'] ?>/<?= $data['image_hero'];?>"  height="450" alt="" >
                 </div>
                 <?php  if(!empty($data['image_logo'])) 
          echo  '<div class="en-tete__logo">
@@ -112,15 +112,8 @@
                                 <!--      SERVICES SECTION     -->
             <section  class="services">
                 <h2 class="services__title limelight-regular"><?= $data['services'] ?></h2>
-                    <?php // On définit le chemin vers le dossier (relatif à index.php)
-                            $dir =  'images/' .  $section['dossier_photos'] . '/';
 
-                            // On récupère tous les fichiers .jpeg et .jpg (glob est sensible à la casse)
-                            // {*.jpg,*.jpeg,*.JPG,*.JPEG} permet de tout attraper
-                            $images = scandir('/pages_artisans/aps/images/' . $section['dossier_photos'].'/');
-                           
-                            var_dump( $images);
-                     foreach ($data['sections'] as $section) : ?>
+            <?php foreach ($data['sections'] as $section) : ?>
                                 <!--       Services  N°1   -->
 
                 <div  id="services<?= $section['id']; ?>" class="services__lambda">
@@ -128,35 +121,26 @@
                     <p class="services__lambda_text"> <?= $section['text'] ?></p>
 
                                 <!--     Main1 Pictures     -->
-                  
-                    <?php  for ($i=0; $i<count($images); $i+=2){ 
-                        
-                echo   '<p class="services__lambda_photos">';
-                    echo   '<img class="photo photo1" src=" '. $images[$i] . '"  width="100" alt="">';               
-                    echo   '<img class="photo photo2" src="' . $images[$i+1] . '"  width="100" alt="">
-                        </p>';
-                    }
-                    ?>
-                    <p><?= $images[$i] ?></p>
+
                     <p class="services__lambda_photos">
-                        <img class="photo photo1" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m1.jpeg" width="100" alt="">                    
-                        <img class="photo photo2" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m2.jpeg"  width="100" alt="">
+                        <img class="photo photo1" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m1.jpg" width="100" alt="">                    
+                        <img class="photo photo2" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m2.jpg"  width="100" alt="">
                     </p>
                     <p class="services__lambda_photos">
-                        <img class="photo photo4" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m4.jpeg" width="100" alt="">
-                        <img class="photo photo3" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m3.jpeg"  width="100" alt="">                  
+                        <img class="photo photo4" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m4.jpg" width="100" alt="">
+                        <img class="photo photo3" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m3.jpg"  width="100" alt="">                  
                     </p>
                     <p class="services__lambda_photos">
-                        <img class="photo photo5" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m5.jpeg" width="100" alt="">                    
-                        <img class="photo photo6" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m6.jpeg" width="100" alt="">
+                        <img class="photo photo5" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m6.jpg" width="100" alt="">                    
+                        <img class="photo photo6" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m5.jpg" width="100" alt="">
                     </p>
                     <p class="services__lambda_photos">
-                        <img class="photo photo7" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m7.jpeg"  width="100" alt="">                  
-                        <img class="photo photo8" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m8.jpeg"  width="100" alt="">
+                        <img class="photo photo7" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m7.jpg"  width="100" alt="">                  
+                        <img class="photo photo8" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m8.jpg"  width="100" alt="">
                     </p>
                     <p class="services__lambda_photos">
-                        <img class="photo photo9" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m9.jpeg"  width="100" alt="">                   
-                        <img class="photo photo10" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m10.jpeg" width="100" alt="">
+                        <img class="photo photo9" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m9.jpg"  width="100" alt="">                   
+                        <img class="photo photo10" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m10.jpg" width="100" alt="">
                     </p>
                 </div>
                 <div class="en-tete__contact">
