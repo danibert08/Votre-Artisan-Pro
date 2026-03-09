@@ -7,8 +7,6 @@
     <base href="<?php echo $baseUrl; ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex"><!-- A retirer pour chaque artisan -->
-    
     <link rel="canonical" href="<?= $canonical_url; ?>" />
     <title><?= $data['tag_title']; ?></title>
     <link rel="stylesheet" href="../../assets/common_assets/css/reset.css" class="css">
