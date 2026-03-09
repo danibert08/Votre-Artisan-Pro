@@ -4,6 +4,7 @@
   "prenom" : "Florian",
   "nom_commercial" : "APS",
   "metier": "PLOMBIER",
+  "activité":"Plomberie et Electricité",
   "commune": "Les Sables d'Olonne",
   "telephone" : "0762912681",
   "mail" : "",
@@ -24,6 +25,7 @@
   "sections": [
     {
       "id":"1",
+      "navTitle":"plombelec",
       "activite": "Plomberie Gaz et Eau",
       "text": "Besoin d'une installation fiable ou d'un dépannage urgent ? Spécialisé dans les travaux d'installation d'eau et de gaz, je mets mon savoir-faire au service de vos projets de construction et de rénovation. De la conception de votre salle de bain à la pose de réseaux de gaz complexes, j’assure une exécution rigoureuse respectant les normes de sécurité les plus strictes. Mon objectif est simple : vous garantir des installations durables, une consommation optimisée et une tranquillité d'esprit totale. <br>Mes domaines d'intervention : Plomberie sanitaire : Installation, robinetterie, chauffe-eau et traitement de l'eau.Réseaux de gaz : Pose de conduites, raccordements et mise en conformité. Chauffage : Optimisation de vos circuits d'eau chaude.",
       "dossier_photos": "photos1"
