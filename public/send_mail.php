@@ -150,6 +150,7 @@ $artisanMap = [
     'la-cle-vendeenne' => 'daniel@votreartisanpro.fr',
     'sables-decor' => 'daniel@votreartisanpro.fr',
     'gilfredo' => 'daniel@votreartisanpro.fr',
+    'un-zeste-de-bois' => 'daniel@votreartisanpro.fr, informacc85@gmail.com'
 ];
 
 $artisanEmail = $artisanMap[$sd] ?? null;
