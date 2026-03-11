@@ -1,0 +1,62 @@
+{
+  "dossier": "esprit-confort",
+  "nom": "BEN AZOUZ",
+  "prenom" : "Ridha",
+  "nom_commercial" : "ESPRIT CONFORT",
+  "metier": "Peintre en bâtiment",
+  "activite": "Travaux de peinture et vitrerie",
+  "genre_publication": "Le directeur",
+  "commune": "Les Sables d'Olonne",
+  "telephone" : "0638849114",
+  "mail" : "espritconfort@gmail.com",
+  "forme_juridique": "Entreprise Individuelle",
+  "siren": "751315078",
+  "rue": "14 Impasse Alexandre Dumas",
+  "ville": "85100 Les Sables d'Olonne",
+  "google_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2746.75752654701!2d-1.7561981!3d46.4931135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4806467f2317bb4f%3A0xd4cc18c7abe80542!2sEsprit%20Confort%20Peinture!5e0!3m2!1sfr!2sfr!4v1773258149051!5m2!1sfr!2sfr",
+  "theme_couleur": "purple",
+  "tag_title": "ESPRIT CONFORT PEINTURE : Travaux de peinture, refection de façade, nettoyage de toiture ",
+  "image_hero": "images/hero/h1.jpeg",
+  "image_logo": "images/logo/logo.jpeg",
+  "tiktok": "",
+  "instagram": "",
+  "facebook": "https://www.facebook.com/espritconfortpeinture?locale=fr_FR",
+  
+  "services": "Mes services",
+  "sections": [
+    {
+      "id":"1",
+      "navTitle":"Intérieur",
+      "activite": "Peinture et papier peint",
+      "text": "Redonnez vie à vos murs avec expertise. <br><br>Parce que votre intérieur est le reflet de votre personnalité, je mets mon savoir-faire à votre service pour transformer vos espaces de vie. Spécialisé en peinture intérieure et pose de revêtements muraux, je vous accompagne de la préparation des supports aux finitions les plus délicates.<br><br>Peinture : Mate, satinée ou veloutée, j'utilise des produits de haute qualité pour un rendu impeccable et durable.<br><br>Papier peint : Pose de papiers peints panoramiques, vinyles ou intissés avec une précision millimétrée.<br><br>Conseil déco : Besoin d'aide pour choisir une palette de couleurs ou une texture ? Je vous guide pour créer l'ambiance qui vous ressemble.<br><br>Le petit plus : Un chantier propre, des délais respectés et une protection totale de votre mobilier.",
+      "dossier_photos": "photos1"
+    },
+    {
+      "id": "2",
+      "navTitle":"Façade",
+      "activite": "Ravallement de façade",
+      "text": "Protégez et valorisez votre patrimoine avec un ravalement expert.<br><br>La façade de votre maison subit les assauts du temps : pollution, micro-organismes et intempéries finissent par fragiliser vos murs. Un ravalement n’est pas qu’un simple coup de peinture, c'est une cure de jouvence indispensable pour la longévité de votre bâti.<br><br>Mon savoir-faire :<br><br>Nettoyage & Traitement : Élimination des mousses, lichens et traces de pollution.<br><br>Réparation des supports : Traitement des fissures et reprise d'enduits pour garantir l'étanchéité.<br><br>Finitions durables : Peintures extérieures, films minces ou revêtements semi-épais (RSE/RPE) adaptés à votre support.<br><br>Bon à savoir : Un ravalement bien exécuté peut améliorer l'isolation thermique de votre foyer et augmenter significativement la valeur immobilière de votre bien.",
+      "dossier_photos": "photos2"     
+    },
+    {
+      "id": "3",
+      "navTitle":"Toiture",
+      "activite": "Nettoyage toiture",
+      "text": "Titre : Toiture encrassée ? Protégez votre maison avant qu'il ne soit trop tard !<br><br>Mousses, lichens et algues retiennent l'humidité et finissent par rendre vos tuiles poreuses, provoquant des fissures et des infiltrations. Un entretien régulier est la seule solution pour prolonger la durée de vie de votre couverture sans avoir à la refaire entièrement.<br><br>Mon protocole de soin complet :<br><br>Démoussage mécanique : Retrait des amas de mousse à la main ou par brossage.<br><br>Nettoyage basse pression : Élimination des traces noires et de la pollution sans abîmer le support.<br><br>Traitement Curatif & Préventif : Application d'un produit fongicide et algicide professionnel pour une efficacité durable.<br><br<Option Protection (Hydrofuge) : Imperméabilisation des tuiles pour que l'eau perle et emporte les saletés avec elle.<br><br>Le conseil de l'expert : Ne montez pas sur votre toit ! Confiez cette tâche dangereuse à un professionnel équipé du matériel de sécurité adéquat.",
+      "dossier_photos": "photos3"
+    }
+  ],
+
+  "price":{
+    "price_first_title": "Paiement",
+    "price_second_title": "Tarif",
+    "price_text": "Combien coûte votre projet de rénovation ? 💸<br><brC'est souvent la question n°1 ! Il est difficile de donner un prix fixe sans voir le chantier, car peindre un mur neuf n'est pas la même chose que de restaurer un mur ancien fissuré.<br><br>Ce que je vous garantis :<br><br>Un diagnostic gratuit : Je viens chez vous pour évaluer les travaux.<br><br>Un devis transparent : Pas de frais cachés, tout est détaillé (préparation, matériel, main-d'œuvre).<br><br>Le respect du budget : Nous discutons ensemble des meilleures options selon vos moyens.<br><br>👉 Demandez votre estimation gratuite en 48h par message privé !"
+  },
+  "whoami":{
+    "whoami_first_title":"Qui suis-je",
+    "whoami_text":"Je suis un artisan peintre passionné par la rénovation de l'habitat. Mon métier ne se résume pas à appliquer de la couleur sur un mur ou à nettoyer une toiture ; il s'agit de protéger votre patrimoine et de créer l'ambiance où vous vous sentirez bien au quotidien.<br><br>Fort de 15 années d'expérience, j'ai appris que la clé d'un chantier réussi réside dans la préparation et l'écoute. Que ce soit pour la pose délicate d'un papier peint panoramique ou le ravalement technique d'une façade, j'accorde la même importance aux détails et aux finitions.<br><br>Ma philosophie : Un travail soigné, un chantier propre et un sourire en prime !"
+  }
+
+  
+
+}
