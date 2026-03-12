@@ -1,0 +1,48 @@
+{
+  "dossier": "mincent",
+  "nom": "MINCENT",
+  "prenom" : "Lionel",
+  "nom_commercial" : "LIONEL MINCENT TAPISSIER",
+  "metier": "Tapissier - Bourrelier",
+  "activite": "Fabrication d'autres meubles et industries connexes de l'ameublement ",
+  "genre_publication": "Le directeur",
+  "commune": "Les Sables d'Olonne",
+  "telephone" : "0607525766",
+  "mail" : "lionel.mincent@orange.fr",
+  "forme_juridique": "Entreprise Individuelle",
+  "siren": "414363937",
+  "rue": "290 Avenue François Mitterand",
+  "ville": "85100 Les Sables d'Olonne",
+  "google_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2744.8606631351113!2d-1.7739847999999998!3d46.530659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48045d31f887db97%3A0x1e7148c6803d5659!2sLionel%20Mincent%20Tapissier%20d&#39;Ameublement!5e0!3m2!1sfr!2sfr!4v1773318389201!5m2!1sfr!2sfr",
+  "theme_couleur": "purple",
+  "tag_title": "LIONEL MINCENT : Tapissier - Bourrelier",
+  "image_hero": "images/hero/h1.jpeg",
+  "image_logo": "images/logo/logo.jpeg",
+  "tiktok": "",
+  "instagram": "",
+  "facebook": "https://www.facebook.com/tapissier85100?locale=fr_FR",
+  
+  "services": "Mes services",
+  "sections": [
+    {
+      "id":"1",
+      "navTitle":"Tapissier",
+      "activite": "Tapissier d'ameublement, bourrelier, sellier",
+      "text": "L’art de restaurer, la passion de transmettre. <br><br>Héritier d'un savoir-faire artisanal, je mets mon expertise de tapissier-bourrelier au service de vos objets de caractère. Qu'il s'agisse de redonner vie à un fauteuil de famille ou de façonner le cuir pour vos équipements de sellerie, mon travail repose sur une exigence absolue : la durabilité.<br><br>Tapisserie d'ameublement : Réfection de sièges (tous styles), pose de tissus haut de gamme et finitions soignées. <br><br>Bourrellerie : Travail du cuir, réparation de harnachements, de maroquinerie technique et créations sur mesure.<br><br>Chaque pièce qui passe entre mes mains raconte une histoire. Mon rôle ? Faire en sorte qu'elle dure encore plusieurs générations.",
+      "dossier_photos": "photos1"
+    }
+  ],
+
+  "price":{
+    "price_first_title": "Paiement",
+    "price_second_title": "Tarif",
+    "price_text": "Le juste prix du sur-mesure. <br><bChaque pièce qui entre dans l'atelier est unique, c’est pourquoi je travaille principalement sur devis personnalisé. Le tarif d'une prestation de tapissier-bourrelier dépend de trois facteurs clés : <br><br>Le temps de main-d'œuvre : Entre le dégarnissage complet, le sanglage, le guindage des ressorts et la pose du tissu, une réfection traditionnelle peut demander plusieurs dizaines d'heures.<br><br>La technicité : Un point sellier réalisé à la main sur du cuir épais demande une expertise et une force différentes d'une couverture de chaise.<br><br>Les fournitures : J'utilise des matériaux de haute qualité (crin végétal, ressorts biconiques, cuirs de tanneries françaises) pour garantir la longévité de vos objets.<br><br>Note : Le devis est gratuit et détaillé, vous permettant de comprendre chaque étape de la restauration de votre pièce."
+  },
+  "whoami":{
+    "whoami_first_title":"Qui suis-je",
+    "whoami_text":"Installé depuis 20 ans comme tapissier d ameublement, bourrelier, sellier, je refais sièges et fauteuils de styles, voilages, réfection de matelas de laine, réparation d'articles en cuir. Je propose un large choix de tissus et cuirs à mon atelier."
+  }
+
+  
+
+}
