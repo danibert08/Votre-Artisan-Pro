@@ -1,0 +1,48 @@
+{
+  "dossier": "entretien-nettoyage-vimont",
+  "nom": "VIMONT",
+  "prenom" : "Jérémy",
+  "nom_commercial" : "ENTRETIEN NETTOYAGE VIMONT",
+  "metier": "Nettoyage de Bâtiments",
+  "activite": "Nettoyage de bâtiment, toiture, vitre, fin fin de chantier, débarras maison, déménagement, petit travaux de jardinage",
+  "genre_publication": "Le directeur",
+  "commune": "Chantonnay",
+  "telephone" : "0768592961",
+  "mail" : "nettoyagevimont@gmail.com",
+  "forme_juridique": "Entreprise Individuelle",
+  "siren": "995331634",
+  "rue": "12 Cité des Marguerites",
+  "ville": "85110 chantonnay",
+  "google_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2736.4869335286207!2d-1.0479206234014704!3d46.69612637112083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48068e79b610ef3f%3A0xd0331756134db0f!2s12%20Cit%C3%A9%20des%20Marguerites%2C%2085110%20Chantonnay!5e0!3m2!1sfr!2sfr!4v1773339145960!5m2!1sfr!2sfr",
+  "theme_couleur": "green",
+  "tag_title": "ENTRETIEN  NETTOYAGE  VIMONT : Nettoyage de bâtiment extérieur. Nettoyage de toiture. Nettoyage de vitre. Nettoyage de fin de chantier. Débarras maison. Déménagement. Petit travaux de jardinage.",
+  "image_hero": "images/hero/h1.jpeg",
+  "image_logo": "images/logo/logo.jpeg",
+  "tiktok": "",
+  "instagram": "",
+  "facebook": "",
+  
+  "services": "Mes services",
+  "sections": [
+    {
+      "id":"1",
+      "navTitle":"Nettoyage",
+      "activite": "Nettoyage de bâtiment, toiture, vitre, fin fin de chantier, débarras maison, déménagement, petit travaux de jardinage",
+      "text": "Un seul interlocuteur pour l’entretien et le soin de votre habitat ! <br><br>Vous manque de temps ou d'équipement ? Que ce soit pour redonner de l'éclat à votre maison ou pour vous accompagner dans une transition de vie, je vous propose des solutions clés en main : <br><br>Entretien extérieur : Nettoyage haute pression ou doux de vos façades et toitures (démoussage). <br><br>Clarté et finitions : Nettoyage de vitres (particuliers et pros) et remise en état après travaux (fin de chantier). <br><br>Logistique et vide-maison : Service de débarras complet et aide au déménagement pour une transition sans stress. <br><br>Espaces verts : Petits travaux de jardinage pour un extérieur toujours impeccable.<br><br>Réactivité, rigueur et chantier propre : je m'occupe de tout pour que vous n'ayez rien à faire.",
+      "dossier_photos": "photos1"
+    }
+  ],
+
+  "price":{
+    "price_first_title": "Paiement",
+    "price_second_title": "Tarif",
+    "price_text": "La qualité d'un service de proximité. <br><br>Parce que chaque maison et chaque chantier est unique,je privilégie le devis gratuit et personnalisé. Mes tarifs sont calculés au plus juste pour vous garantir un travail soigné, réalisé avec du matériel professionnel.<br><br>Ce qui est inclus dans mes prix :<br><br>✅ Le matériel professionnel (nettoyeur haute pression, outils de jardin, etc.).<br><br>✅ Les produits de nettoyage respectueux de vos supports.<br><br>✅ L'assurance Responsabilité Civile Professionnelle pour votre sécurité.<br><br>✅ Un chantier laissé propre après mon passage."
+  },
+  "whoami":{
+    "whoami_first_title":"Qui suis-je",
+    "whoami_text":"Je mets mon énergie et mon savoir-faire au service des particuliers et des professionnels.<br><br> Mon objectif est simple : vous décharger des tâches techniques et physiques pour que vous puissiez profiter pleinement de votre environnement. <br><br>Issu d'un parcours où la rigueur est de mise, j'ai choisi de créer cette activité multiservice pour offrir une solution complète. <br><br>Qu'il s'agisse de redonner de l'éclat à une toiture, de rendre des vitres étincelantes, de gérer un débarras complexe ou d'entretenir vos espaces verts, j'interviens avec le même souci du détail.<br><br>Mes engagements : Ponctualité, discrétion et un chantier toujours rendu impeccable."
+  }
+
+  
+
+}
