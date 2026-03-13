@@ -3,6 +3,7 @@
   "nom": "BONNET",
   "prenom" : "Youri",
   "nom_commercial" : "ARTISAN BONNET SERRURIER",
+  "raison_sociale" : "ARTISAN BONNET SERRURIER",
   "metier": "SERRURIER",
   "activite": "Travaux de menuiserie métallique et serrurerie",
   "genre_publication": "Le directeur",

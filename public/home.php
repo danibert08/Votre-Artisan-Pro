@@ -27,6 +27,8 @@
         <div>
             <h1>Votre site professionnel clé en main pour votre activité artisanale</h1><br><br>
             <h2>Nous vous simplifions la tâche :</h2><br><br>
+            <p>Vous communiquez les informations et les photos, et nous nous occupons du reste.</p><br>
+            <p>Vous n'avez rien d'autre à faire, et votre site sera en ligne dans les 24h (souvent moins)</p><br>
             <br><p>Un site pour votre activité, adapté à tous les écrans, simple, efficace, prêt à l’emploi,
             et optimisé pour le référencement google</p><br><br>
             <p>**************</p><br>
