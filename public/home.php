@@ -44,8 +44,8 @@
                     <p><a href="https://lagon.preprod.votreartisanpro.fr">Lagon</a></p>
                     <p><a href="https://feuillage.preprod.votreartisanpro.fr">Feuillage</a></p>
                     <p><a href="https://terre.preprod.votreartisanpro.fr">Terre</a></p>
-                    <p><a href="https://fushia.preprod.votreartisanpro.fr">fushia</a></p>
-                    <p><a href="https://ciel.preprod.votreartisanpro.fr">ciel</a></p>
+                    <p><a href="https://mauve.preprod.votreartisanpro.fr">Mauve</a></p>
+                    <p><a href="https://ciel.preprod.votreartisanpro.fr">Ciel</a></p>
                 </div>
             </div>
             <p>**************</p><br>
@@ -62,26 +62,33 @@
 
 
         <form id="contact" class="form-container" novalidate>
-            <h2>Contactez-moi</h2>
+            <h2>Demande d'informations</h2>
             <input type="hidden" name="csrf_token" value="<?= $_SESSION['csrf_token']; ?>">
             <div class="form-group">
                 <label for="nom">Nom</label>
-                <input type="text" id="nom" name="nom" required>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
             </div>
-
+            <div class="form-group">
+                <label for="firstname">Prénom</label>
+                <input type="text" id="firstname" name="prenom" placeholder="Votre prénom" required>
+            </div>
+            <div class="form-group">
+                    <label for="tel">Téléphone</label>
+                    <input type="text" id="tel" name="tel" placeholder="0612345678" minlength="10" maxlength="10" required>
+                </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" placeholder="Votre email" required>
             </div>
 
             <div class="form-group">
                 <label for="subject">Sujet</label>
-                <input type="text" id="subject" name="subject" required>
+                <input type="text" id="subject" name="subject" placeholder="Sujet" required>
             </div>
 
             <div class="form-group">
                 <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
+                <textarea id="message" name="message" placeholder="Votre message" required></textarea>
             </div>
 
             <!-- Honeypot anti-spam -->
