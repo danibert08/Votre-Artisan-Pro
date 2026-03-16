@@ -157,6 +157,17 @@ $artisanMap = [
     'les-bouquets-dautrefois' => 'lesbouquetsdautrefois@gmail.com',
     'giraudon-menuiserie' => 'daniel@votreartisanpro.fr',
     'favreau-depannage' => 'alexandrefavreau427@gmail.com',
+    'mon-electricien' => 'daniel@votreartisanpro.fr',    
+    'mon-peintre' => 'daniel@votreartisanpro.fr',    
+    'mon-serrurier' => 'daniel@votreartisanpro.fr',    
+    'martine_beauty' => 'daniel@votreartisanpro.fr',    
+    'ma-salle-de-bain' => 'daniel@votreartisanpro.fr',    
+    'mon-cordonnier' => 'daniel@votreartisanpro.fr',    
+    'espaces-verts' => 'daniel@votreartisanpro.fr',    
+    'mon-platrier' => 'daniel@votreartisanpro.fr',    
+    'mon-menuisier' => 'daniel@votreartisanpro.fr',    
+    'mon-parpaing' => 'daniel@votreartisanpro.fr',    
+    'mon-ferronnier' => 'daniel@votreartisanpro.fr',    
     
 ];
 

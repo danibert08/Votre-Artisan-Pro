@@ -13,6 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Simple</title>
     <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/assets_artisans/style.css">
     <link rel="stylesheet" href="assets/vap/style.css">
 </head>
 <body>
@@ -25,33 +26,65 @@
     <main>
 
         <div>
-            <h1>Votre site professionnel clé en main pour votre activité artisanale</h1><br><br>
-            <h2>Nous vous simplifions la tâche :</h2><br><br>
-            <p>Vous communiquez les informations et les photos, et nous nous occupons du reste.</p><br>
-            <p>Vous n'avez rien d'autre à faire, et votre site sera en ligne dans les 24h (souvent moins)</p><br>
-            <br><p>Un site pour votre activité, adapté à tous les écrans, simple, efficace, prêt à l’emploi,
-            et optimisé pour le référencement google</p><br><br>
-                <p>Choisissez votre thème couleur : </p>
+            <h1>Obtenez votre site professionnel clé en main pour votre activité artisanale</h1><br>
+            <h2>Nous vous simplifions la tâche :</h2><br>
+            <p>Vous communiquez les informations et les photos, et nous nous occupons du reste.</p>
+            <p>Vous n'avez rien d'autre à faire, et votre site sera en ligne dans les 24h (souvent moins)</p>
+            <p>Un site pour votre activité, adapté à tous les écrans, simple, efficace, prêt à l’emploi,
+            et optimisé pour le référencement google.</p>
+            <p>Le site comprend un menu, une en-tête avec image et logo, de une à trois sections avec pour chacune 10 photos, la localisation google map, une section tarif, une section qui suis-je, un formulaire de contact et les liens vers vos réseaux sociaux si vous en disposez.</p>
+                <p>Vous trouverez par ailleurs un grand choix de thème couleur.</p>
+                <p>Cliquez sur l'image pour en voir plus !</p><br><br>
             <div class="choix_theme">
-                <div class="themex5">
-                    <p><a href="https://purple.preprod.votreartisanpro.fr">Purple</a></p>
-                    <p><a href="https://pink.preprod.votreartisanpro.fr">Pink</a></p>
-                    <p><a href="https://souris.preprod.votreartisanpro.fr">Souris</a></p>
-                    <p><a href="https://cuir.preprod.votreartisanpro.fr">Cuir</a></p>
-                    <p><a href="https://ocean.preprod.votreartisanpro.fr">Océan</a></p>
-                </div>
-                <div class=themex5>
-                    <p><a href="https://lagon.preprod.votreartisanpro.fr">Lagon</a></p>
-                    <p><a href="https://feuillage.preprod.votreartisanpro.fr">Feuillage</a></p>
-                    <p><a href="https://terre.preprod.votreartisanpro.fr">Terre</a></p>
-                    <p><a href="https://mauve.preprod.votreartisanpro.fr">Mauve</a></p>
-                    <p><a href="https://ciel.preprod.votreartisanpro.fr">Ciel</a></p>
+                <div   class="services__lambda">
+                    
+
+                                <!--     Main1 Pictures     -->
+                    
+                    <p class="services__lambda_photos">
+                        <a class="theme_link" href="pages_artisans/espaces-verts">Feuillage<br><img class="photo photo1" src="/images_vap/photos1/m1.jpeg"  alt=""></a>
+                        <a class="theme_link" href="pages_artisans/ma-salle-de-bain">Lilas<br><img class="photo photo2" src="/images_vap/photos1/m2.jpeg"  alt=""></a> 
+                    </p>
+                    
+                    <p class="services__lambda_photos">
+                        <a class="theme_link" href="pages_artisans/martine-beauty">Flamant<br><img class="photo photo3" src="/images_vap/photos1/m3.jpeg"  alt=""></a>                    
+                        <a class="theme_link" href="pages_artisans/mon-cordonnier">Cuir<br><img class="photo photo4" src="/images_vap/photos1/m4.jpeg" alt=""></a>
+                    </p>
+                    <p class="services__lambda_photos">
+                        <a class="theme_link" href="pages_artisans/mon-electricien">Ciel<br><img class="photo photo5" src="/images_vap/photos1/m5.jpeg" alt=""></a>                    
+                        <a class="theme_link" href="pages_artisans/mon-menuisier">Terre<br><img class="photo photo6" src="/images_vap/photos1/m6.jpeg" alt=""></a>
+                    </p>
+                  
+                    <p class="services__lambda_photos">
+                        <a class="theme_link" href="pages_artisans/mon-parpaing">Soleil<br><img class="photo photo7" src="/images_vap/photos1/m7.jpeg" alt=""></a>                  
+                        <a class="theme_link" href="pages_artisans/mon-peintre">Aubergine<br><img class="photo photo8" src="/images_vap/photos1/m8.jpeg" alt=""></a>
+                    </p>
+                   
+                    <p class="services__lambda_photos">
+                        <a class="theme_link" href="pages_artisans/mon-platrier">Lagon<br><img class="photo photo9" src="/images_vap/photos1/m9.jpeg" alt=""></a>                   
+                        <a class="theme_link" href="pages_artisans/mon-serrurier">Océan<br><img class="photo photo10" src="/images_vap/photos1/m10.jpeg" alt=""></a>
+                    </p>
+                    <p class="services__lambda_photos">
+                        <a class="theme_link" href="pages_artisans/mon-ferronier">Souris<br><img class="photo photo11" src="/images_vap/photos1/m11.jpeg" alt=""></a>                                        
+                        <a class="theme_link" href="pages_artisans/mon-verrier">Tomate<br><img class="photo photo12" src="/images_vap/photos1/m12.jpeg" alt=""></a>                                        
+                    </p>
+                    <p class="services__lambda_photos">
+                                                              
+                    </p>
                 </div>
             </div>
             <p>**************</p><br>
             <p><u>Tarif unique sans coûts cachés :</u></p><br><br>
             <p>Une seule fois 49€ pour la réalisation.</p><br>
             <p>Puis seulement 12,99€/mois pour l'hébergement, la maintenance,les mises a jour et les petites modifications.</p><br>
+            <p>**************</p><br>
+            <p>Vous êtes convaincus ? </p><br>
+            <p>Alors remplissez dès à présent le formulaire ci-dessous.</p>
+            <p>Dans la partie message, renseignez votre Siren, et en option vos textes par section, je peux m'en charger si vous préférez.</p>
+            <p>Puis adressez-moi 11 photos en format paysage par whatsApp au 07.45.06.34.58, ainsi que votre logo si vous en avez un.</p>
+            <p>**************</p>
+            <p>Votre site internet sera en ligne dans les 24 heurs</p>
+            <p>Vous recevrez ensuite un lien de paiement pour effectuer votre règlement</p>
             <p>**************</p>
         </div>
 

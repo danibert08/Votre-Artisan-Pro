@@ -1,0 +1,57 @@
+{
+  "dossier": "mon-electricien",
+  "nom": "COUTANCE",
+  "prenom" : "Martin",
+  "nom_commercial" : "Electricien Martin",
+  "raison_sociale" : "MON ELECTRICIEN",
+  "metier": "ELECTRICITE PLOMBERIE ",
+  "activite": "Travaux d'installation électrique dans tous locaux",
+   "genre_publication": "Le directeur",
+  "commune": "Les Sables d'Olonne",
+  "telephone" : "0612345678",
+  "mail" : "electricien@orange.fr",
+  "forme_juridique": "Entreprise Individuelle",
+  "siren": "123456789",
+  "rue": "Place de la Meirie",
+  "ville": "85100 Les Sables d'Olonne",
+  "google_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34008.155069406894!2d-1.779395543173709!3d46.49010558616243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480467f399c54809%3A0xeff2e2d3e31bfdac!2sMairie%20des%20Sables-d&#39;Olonne!5e0!3m2!1sfr!2sfr!4v1773646378529!5m2!1sfr!2sfr",
+  "theme_couleur": "ciel",
+  "tag_title": "Mon electricien : Travaux electrique",
+  "image_hero": "images/hero/h1.jpeg",
+  "image_logo": "images/logo/logo.jpeg",
+  "tiktok": "https://votreartisanpro.fr",
+  "instagram": "https://votreartisanpro.fr",
+  "facebook": "https://votreartisanpro.fr",
+  
+  "services": "Mes services",
+  "sections": [
+    {
+      "id":"1",
+      "navTitle": "Electricité",
+      "activite": "Electricité",
+      "text": "Pourquoi me faire confiance ? <br><br>Réactivité : Un interlocuteur unique et local.<br><br>Conseil : Je vous aide à choisir les meilleures options pour votre budget.<br><br>Engagement : Un chantier propre et un suivi rigoureux.<br><br>Soutenir l'artisanat local, c'est choisir l'assurance d'un travail bien fait.",
+      "dossier_photos": "photos1"
+    },
+    {
+      "id": "2",
+      "navTitle": "Plomberie",
+      "activite": "Plomberie",
+      "text": "Une fuite, un débouchage ou un chauffe-eau en panne ? <br><br>Ne laissez pas un petit souci devenir un sinistre. <br><br>Fort de 15 années d'intervention sur le terrain, je réagis avec calme et efficacité pour sécuriser votre habitation.<br><br>Mon engagement est simple : une intervention rapide, un tarif transparent et un travail propre. <br><br>Ma longévité dans le métier est ma meilleure signature : je ne propose que ce qui est nécessaire, avec la rigueur d'un professionnel qui connaît chaque rouage de votre installation. <br><br>Votre urgence mérite l'expérience.",
+      "dossier_photos": "photos2"     
+    }
+ 
+  ],
+
+  "price":{
+    "price_first_title": "Paiement",
+    "price_second_title": "Tarif",
+    "price_text": "Mes tarifs sont calculés au plus juste selon la complexité et l'ampleur de votre demande.<br><br> Mon objectif est de vous proposer une solution rentable sans jamais sacrifier la qualité.<br><br>Étude personnalisée : Analyse gratuite de vos besoins.<br><br>Devis détaillé : Une transparence totale sur le coût de la main-d’œuvre et des fournitures.<br><br>Engagement : Pas de frais cachés, le prix annoncé est le prix appliqué."
+  },
+  "whoami":{
+    "whoami_first_title":"Qui suis-je",
+    "whoami_text":" Avec 10 années d'expérience, j'allie savoir-faire technique et écoute pour vous proposer des solutions sur mesure. <br><br>Ce que j'apporte à mes clients :<br><br>Expertise : Une maîtrise complète de [Compétence clé].<br><br>Fiabilité : Le respect des délais et des normes de qualité.<br><br>Sérénité : Un suivi de A à Z pour que vous n'ayez à vous soucier de rien.<br><br>Mon but est simple : transformer vos contraintes en résultats concrets. Discutons de votre projet !"
+  }
+
+  
+
+}

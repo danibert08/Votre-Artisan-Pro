@@ -29,11 +29,37 @@ h2{
     font-size: 2rem;
 }
 .choix_theme{
-    display: flex;
-    justify-content: center;
+    margin: auto;
 }
-.themex5{
-    width: 200px;
+.theme{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.services__lambda_photos{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0;
+    margin-bottom: 2rem;
+   
+}
+.theme_link{
+    
+}
+.services__lambda h2{
+    margin-bottom: 0;
+}
+.services__lambda a {
+    color: black;
+}
+.photo{ 
+    box-shadow: 0 0 2vw var(--photo-shadow);
+    border: solid 1px black;
+    border-radius: 10px; 
+    width: 60%; 
+    margin: 20px 5%;  
 }
 /* color : #0249AF */
  /*********************/

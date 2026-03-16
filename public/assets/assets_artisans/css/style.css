@@ -604,7 +604,7 @@ textarea {
                     /*************************/
                         /*** Body themes ***/
 
-body.green{
+body.feuillage{
     --button-bg-color: #d6e39d;
     --button-border-color: white;
     --button-box-shadow:  #aac855;
@@ -619,7 +619,7 @@ body.green{
     --container-bg-color: white;
 }
 
-body.orange{
+body.cuir{
     --button-bg-color: #f9e5a9;
     --button-border-color:black;
     /* --button-box-shadow:  #F79F1F; */
@@ -634,7 +634,22 @@ body.orange{
     --container-bg-color: white;
 }
 
-body.mauve{
+body.soleil{
+    --button-bg-color: #f1ef5f;
+    --button-border-color:black;
+    /* --button-box-shadow:  #F79F1F; */
+    --services-box-shadow: #f7f71f;
+    --photo-shadow: #2e2027;
+    --color-enseigne: #b0ab4e;
+    --socialmedia-title-color: #686b0a;
+    --navbar-bg-color: #f8f55e;
+    --navbar-text-color: black;
+    --nav-links-hover-color: black;
+    --nav-links-hover-scale: scale(1.08);
+    --container-bg-color: white;
+}
+
+body.lilas{
     --button-bg-color: #fec6ea;
     --button-border-color:white;
     --button-box-shadow:  #cf8ee6;
@@ -649,7 +664,7 @@ body.mauve{
     --container-bg-color: white;
 }
 
-body.blue{
+body.ciel{
     --button-bg-color: #ace9f4;
     --button-border-color:black;
     /* --button-box-shadow:  #87b4e1; */
@@ -664,7 +679,7 @@ body.blue{
     --container-bg-color: white;
 }
 
-body.light-blue{
+body.lagon{
     --button-bg-color: #a9d9d7;
     --button-border-color:white;
     --button-box-shadow:  #5fb8cf;
@@ -679,7 +694,7 @@ body.light-blue{
     --container-bg-color: white;
 }
 
-body.purple{
+body.aubergine{
     --button-bg-color: #d9a4b6;
     --button-border-color:black;
     /* --button-box-shadow:  #ce81a5; */
@@ -694,7 +709,7 @@ body.purple{
     --container-bg-color: white;
 }
 
-body.brown{
+body.terre{
     --button-bg-color: #cabb94;
     --button-border-color:black;
     --button-box-shadow:  #603c06;
@@ -709,7 +724,7 @@ body.brown{
     --container-bg-color: white;
 }
 
-body.grey{
+body.souris{
     --button-bg-color: #ced6e0;
     --button-border-color:black;
     --button-box-shadow:  #a4b0be;
@@ -724,7 +739,7 @@ body.grey{
     --container-bg-color: white;
 }
 
-body.pink{
+body.flamant{
     --button-bg-color: #e4b8c3;
     --button-text-color:black;
     --button-border-color:white;
@@ -739,7 +754,7 @@ body.pink{
     --nav-links-hover-scale: scale(1.08);
     --container-bg-color: white; 
 }
-body.dark-blue{
+body.ocean{
     --button-bg-color: #2fadc4;
     --button-border-color:black;
     --button-text-color:black;
@@ -754,15 +769,23 @@ body.dark-blue{
     --nav-links-hover-color: black;
     --nav-links-hover-scale: scale(1.08);
     --container-bg-color: white;
+}
 
-
-
-
-
-
-
-
+body.tomate{
+    --button-bg-color: #e80e0e;
+    --button-border-color:black;
+    /* --button-box-shadow:  #F79F1F; */
+    --services-box-shadow: #dc4e4e;
+    --photo-shadow: #2e2027;
+    --color-enseigne: #960e0e;
+    --socialmedia-title-color: #EE5A24;
+    --navbar-bg-color: #e80e0e;
+    --navbar-text-color: black;
+    --nav-links-hover-color: white;
+    --nav-links-hover-scale: scale(1.08);
+    --container-bg-color: white;
+}
 
     
-}
+
 
