@@ -42,7 +42,7 @@
                                 <!--     Main1 Pictures     -->
                     
                     <p class="services__lambda_photos">
-                        <a class="theme_link" href="/pages_artisans/espaces-verts">Feuillage<br><img class="photo photo1" src="/images_vap/photos1/m1.jpeg"  alt=""></a>
+                        <a class="theme_link" href="./pages_artisans/espaces-verts">Feuillage<br><img class="photo photo1" src="/images_vap/photos1/m1.jpeg"  alt=""></a>
                         <a class="theme_link" href="pages_artisans/ma-salle-de-bain">Lilas<br><img class="photo photo2" src="/images_vap/photos1/m2.jpeg"  alt=""></a> 
                     </p>
                     
