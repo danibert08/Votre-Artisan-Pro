@@ -11,12 +11,11 @@
     <title><?= $data['tag_title']; ?></title>
     <!-- Solution de repli pour anciens navigateurs -->
     <?php
-        $favicon = file_exists($_SERVER['DOCUMENT_ROOT'] . '/pages_artisans/' . $data['dossier'] . '/images/logo/logo.jpeg') ? '/pages_artisans/' . $data['dossier'] . '/images/logo/logo.jpeg' : '/assets/vap/favicon.jpeg';
+        $favicon = file_exists($_SERVER['DOCUMENT_ROOT'] . '/public/pages_artisans/' . $data['dossier'] . '/images/logo/logo.jpeg') ? '/pages_artisans/' . $data['dossier'] . '/images/logo/logo.jpeg' : '/assets/vap/favicon.jpeg';
     ?>
-    <?php var_dump($_SERVER['DOCUMENT_ROOT'] . '/pages_artisans/' . $data['dossier'] . '/images/logo/logo.jpeg')  ?>
     <link rel="shortcut icon" type="image/jpeg" href="<?= $favicon ?>">
     <!-- Apple Touch Icon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="<?=  file_exists($_SERVER['DOCUMENT_ROOT'] . '/pages_artisans/' . $data['dossier'] . '/images/logo/logo.jpeg')  ? '/pages_artisans/' . $data['dossier'] . '/images/logo/logo.jpeg'  :  '/assets/vap/favicon.jpeg'?>">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?=  file_exists($_SERVER['DOCUMENT_ROOT'] . '/pages_artisans/' . $data['dossier'] . '/images/logo/logo.jpeg')  ? '/public/pages_artisans/' . $data['dossier'] . '/images/logo/logo.jpeg'  :  '/assets/vap/favicon.jpeg'?>">
     <link rel="stylesheet" href="../../assets/common_assets/css/reset.css" class="css">
     <link rel="stylesheet" href="../../assets/assets_artisans/css/style.css" class="css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
