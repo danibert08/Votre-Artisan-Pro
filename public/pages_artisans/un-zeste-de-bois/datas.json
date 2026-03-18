@@ -17,6 +17,7 @@
   "google_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2746.1958832275322!2d-1.7424406!3d46.5042328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48045df1f7e76d43%3A0x87bba5eeb5e0d5a4!2sUn%20Zeste%20De%20Bois%20-%20Les%20Sables%20d&#39;Olonne!5e0!3m2!1sfr!2sfr!4v1773250917219!5m2!1sfr!2sfr",
   "theme_couleur": "terre",
   "tag_title": "Un Zeste de Bois : Menuisier - Ebéniste - Creation et montage de cuisines, dressing, agencement et décoration.",
+  "meta_description": "Travaux de menuiserie",
   "image_hero": "images/hero/h1.jpeg",
   "image_logo": "images/logo/logo.jpeg",
   "favicon": "images/logo/logo.jpeg",
@@ -31,7 +32,17 @@
       "navTitle":"Menuiserie",
       "activite": "Menuiserie - Ebénisterie",
       "text": " Je vous propose d'aménager vos espaces intérieurs (cuisine, dressing, rangements et meubles sur mesure) en fonction de vos besoins et en optimisant au maximum vos espaces. Je me ferai un plaisir d'étudier avec vous vos projets d'aménagement. N'hésitez pas à me contacter pour plus de renseignements.",
-      "dossier_photos": "photos1"
+      "dossier_photos": "photos1",
+      "alt_m1": "",
+      "alt_m2": "",
+      "alt_m3": "",
+      "alt_m4": "",
+      "alt_m5": "",
+      "alt_m6": "",
+      "alt_m7": "",
+      "alt_m8": "",
+      "alt_m9": "",
+      "alt_m10": ""
     }
   ],
 

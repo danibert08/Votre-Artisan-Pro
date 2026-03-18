@@ -17,6 +17,7 @@
   "google_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d701097.3852832174!2d-2.4617150082772405!3d46.65319648941232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6e1802fde661781f%3A0x63bf666f58056398!2sAlexandre%20FAVREAU%20D%C3%A9pannage%20Electrom%C3%A9nager!5e0!3m2!1sfr!2suk!4v1773473365694!5m2!1sfr!2suk",
   "theme_couleur": "ocean",
   "tag_title": "ALEXANDRE FAVREAU DEPANNAGE ELECTROMENAGER : Réparation d'appareils électroménagers et d'équipements pour la maison et le jardin",
+  "meta_description": "Réparation d'électroménagers",
   "image_hero": "images/hero/h1.jpeg",
   "image_logo": "images/logo/logo.jpeg",
   "favicon": "images/logo/logo.jpeg",
@@ -31,7 +32,17 @@
       "navTitle":"Dépannage",
       "activite": "Dépannage Electroménager",
       "text": "Dépanneur à domicile des appareils électroménager et du matériel de cuisine professionnel. J'interviens sur tout le matériel gros électroménager pour les particuliers (lave-linge ,sèche-linge ,lave-vaisselle, four, plaque de cuisson, réfrigérateur, congélateur etc..) ainsi que sur tout les types de matériel de cuisine professionnelle sur site.",
-      "dossier_photos": "photos1"
+      "dossier_photos": "photos1",
+      "alt_m1": "",
+      "alt_m2": "",
+      "alt_m3": "",
+      "alt_m4": "",
+      "alt_m5": "",
+      "alt_m6": "",
+      "alt_m7": "",
+      "alt_m8": "",
+      "alt_m9": "",
+      "alt_m10": ""
     }
   ],
 

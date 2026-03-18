@@ -17,6 +17,7 @@
   "google_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2744.8606631351113!2d-1.7739847999999998!3d46.530659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48045d31f887db97%3A0x1e7148c6803d5659!2sLionel%20Mincent%20Tapissier%20d&#39;Ameublement!5e0!3m2!1sfr!2sfr!4v1773318389201!5m2!1sfr!2sfr",
   "theme_couleur": "aubergine",
   "tag_title": "LIONEL MINCENT : Tapissier - Bourrelier",
+  "meta_description": "Tapissier",
   "image_hero": "images/hero/h1.jpeg",
   "image_logo": "images/logo/logo.jpeg",
   "favicon": "images/logo/logo.jpeg",
@@ -31,7 +32,17 @@
       "navTitle":"Tapissier",
       "activite": "Tapissier d'ameublement, bourrelier, sellier",
       "text": "L’art de restaurer, la passion de transmettre. <br><br>Héritier d'un savoir-faire artisanal, je mets mon expertise de tapissier-bourrelier au service de vos objets de caractère. Qu'il s'agisse de redonner vie à un fauteuil de famille ou de façonner le cuir pour vos équipements de sellerie, mon travail repose sur une exigence absolue : la durabilité.<br><br>Tapisserie d'ameublement : Réfection de sièges (tous styles), pose de tissus haut de gamme et finitions soignées. <br><br>Bourrellerie : Travail du cuir, réparation de harnachements, de maroquinerie technique et créations sur mesure.<br><br>Chaque pièce qui passe entre mes mains raconte une histoire. Mon rôle ? Faire en sorte qu'elle dure encore plusieurs générations.",
-      "dossier_photos": "photos1"
+      "dossier_photos": "photos1",
+      "alt_m1": "",
+      "alt_m2": "",
+      "alt_m3": "",
+      "alt_m4": "",
+      "alt_m5": "",
+      "alt_m6": "",
+      "alt_m7": "",
+      "alt_m8": "",
+      "alt_m9": "",
+      "alt_m10": ""
     }
   ],
 

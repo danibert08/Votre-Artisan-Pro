@@ -17,6 +17,7 @@
   "google_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2743.3225688817433!2d-1.7818481!3d46.5610861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa613f1875d655711%3A0xb3767246abe466b0!2sLes%20Bouquets%20d&#39;Autrefois!5e0!3m2!1sfr!2sfr!4v1773406156554!5m2!1sfr!2sfr",
   "theme_couleur": "cuir",
   "tag_title": "LES BOUQUETS D'AUTREFOIS : Commerce de détail de fleurs, plantes, graines, engrais, animaux de compagnie et aliments pour ces animaux en magasin spécialisé",
+  "meta_description": "Commerce de fleurs",
   "image_hero": "images/hero/h1.jpeg",
   "image_logo": "images/logo/logo.jpeg",
   "favicon": "images/logo/logo.jpeg",
@@ -31,14 +32,34 @@
       "navTitle":"Fleurs",
       "activite": "Artisan fleuriste Bouquets de saison, fleurs séchées, évènementiels, commandes et livraisons.",
       "text": "Bienvenue dans mon univers floral, où chaque pétale raconte une histoire. <br><br>Passionné(e) par la nature et le design végétal, j'ai à cœur de transformer vos émotions en compositions uniques. <br><br>Que ce soit pour célébrer un grand moment de vie, fleurir votre quotidien ou simplement offrir un sourire, je sélectionne avec soin des fleurs de saison pour créer des bouquets qui vous ressemblent. <br><br>Ici, l’artisanat rencontre la poésie pour sublimer chaque occasion",
-      "dossier_photos": "photos1"
+      "dossier_photos": "photos1",
+      "alt_m1": "",
+      "alt_m2": "",
+      "alt_m3": "",
+      "alt_m4": "",
+      "alt_m5": "",
+      "alt_m6": "",
+      "alt_m7": "",
+      "alt_m8": "",
+      "alt_m9": "",
+      "alt_m10": ""
     },
     {
       "id": "2",
       "navTitle":"Boutique",
       "activite": "Chaleureuse et Artisanale",
       "text": "Les bouquets d'autrefois propose des bouquets de fleurs fraîches, de fleurs séchées, des compositions pour les mariages, baptêmes, décès et également des plantes d’intérieur et d’extérieure. Livraison sur toute l’agglomération.",
-      "dossier_photos": "photos2"     
+      "dossier_photos": "photos2",
+      "alt_m1": "",
+      "alt_m2": "",
+      "alt_m3": "",
+      "alt_m4": "",
+      "alt_m5": "",
+      "alt_m6": "",
+      "alt_m7": "",
+      "alt_m8": "",
+      "alt_m9": "",
+      "alt_m10": ""     
     }
   ],
 

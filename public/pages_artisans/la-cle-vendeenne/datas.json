@@ -17,6 +17,7 @@
   "google_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d349352.3740821899!2d-1.8420877999999998!3d46.837480299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805abfd4807085f%3A0x5ce42569021294e3!2sD%C3%A9pannage%20Serrurerie%20Challans%20-%20La%20Cl%C3%A9%20Vend%C3%A9enne!5e0!3m2!1sfr!2sfr!4v1773169862454!5m2!1sfr!2sfr",
   "theme_couleur": "lagon",
   "tag_title": "LA CLE VENDÉENNE CAILLEAU: Travaux de menuiserie métallique et serrurerie",
+  "meta_description": "menuiserie métallique",
   "image_hero": "images/hero/h1.jpeg",
   "image_logo": "images/logo/logo.jpeg",
   "favicon": "images/logo/logo.jpeg",
@@ -31,7 +32,17 @@
       "navTitle":"Serrurerie",
       "activite": "Serrurerie - Métallerie",
       "text": "Dépannage en serrurerie <br><br>Installation de serrures et verrous de portes<br><br>Changement de serrures <br><br>Serrures de portes de sécurité <br><br>Dépannage de serrure en urgence",
-      "dossier_photos": "photos1"
+      "dossier_photos": "photos1",
+      "alt_m1": "",
+      "alt_m2": "",
+      "alt_m3": "",
+      "alt_m4": "",
+      "alt_m5": "",
+      "alt_m6": "",
+      "alt_m7": "",
+      "alt_m8": "",
+      "alt_m9": "",
+      "alt_m10": ""
     }
   ],
 

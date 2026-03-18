@@ -16,7 +16,8 @@
   "ville": "85100 Les Sables d'Olonne",
   "google_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17120.34028034621!2d-1.7932093230314996!3d46.49652115718339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480467f399c54809%3A0xeff2e2d3e31bfdac!2sMairie%20des%20Sables-d&#39;Olonne!5e0!3m2!1sfr!2suk!4v1773479441152!5m2!1sfr!2suk",
   "theme_couleur": "aubergine",
-  "tag_title": "",
+  "tag_title": "Peintre d'intérieur, soigneux et travailleur.",
+  "meta_description": "Faites rénover votre intérieur ! Papier, peinture, je m'en coocupe. travail soigné.",
   "image_hero": "images/hero/h1.jpeg",
   "image_logo": "images/logo/logo.jpeg",
   "favicon": "images/logo/logo.jpeg",
@@ -31,7 +32,17 @@
       "navTitle":"Réalisations",
       "activite": "Peinture",
       "text": "Titre : Redonnez vie à vos espaces avec une finition d'expert <br><br>Passionné par la décoration et le travail bien fait, j'accompagne les particuliers et les professionnels dans tous leurs projets de rénovation intérieure. <br><br>Mon objectif ? Transformer votre intérieur en un lieu qui vous ressemble, avec une exécution impeccable.<br><br>Qu'il s'agisse d'un rafraîchissement complet ou d'une mise en couleur audacieuse, je m'engage à fournir un travail soigné, une protection rigoureuse de vos sols et mobiliers, et le respect de vos délais.<br><br> Je vous conseille également sur le choix des teintes et des matériaux pour un résultat durable et esthétique.",
-      "dossier_photos": "photos1"
+      "dossier_photos": "photos1",
+      "alt_m1": "",
+      "alt_m2": "",
+      "alt_m3": "",
+      "alt_m4": "",
+      "alt_m5": "",
+      "alt_m6": "",
+      "alt_m7": "",
+      "alt_m8": "",
+      "alt_m9": "",
+      "alt_m10": ""
     }
 
   ],

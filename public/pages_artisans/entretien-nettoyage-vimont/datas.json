@@ -17,6 +17,7 @@
   "google_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2736.4869335286207!2d-1.0479206234014704!3d46.69612637112083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48068e79b610ef3f%3A0xd0331756134db0f!2s12%20Cit%C3%A9%20des%20Marguerites%2C%2085110%20Chantonnay!5e0!3m2!1sfr!2sfr!4v1773339145960!5m2!1sfr!2sfr",
   "theme_couleur": "feuillage",
   "tag_title": "ENTRETIEN  NETTOYAGE  VIMONT : Nettoyage de bâtiment extérieur. Nettoyage de toiture. Nettoyage de vitre. Nettoyage de fin de chantier. Débarras maison. Déménagement. Petit travaux de jardinage.",
+  "meta_description": "Nettoyage de bâtiment extérieur",
   "image_hero": "images/hero/h1.jpeg",
   "image_logo": "images/logo/logo.jpeg",
   "favicon": "images/logo/logo.jpeg",
@@ -31,7 +32,17 @@
       "navTitle":"Nettoyage",
       "activite": "Nettoyage de bâtiment, toiture, vitre, fin fin de chantier, débarras maison, déménagement, petit travaux de jardinage",
       "text": "Un seul interlocuteur pour l’entretien et le soin de votre habitat ! <br><br>Vous manque de temps ou d'équipement ? Que ce soit pour redonner de l'éclat à votre maison ou pour vous accompagner dans une transition de vie, je vous propose des solutions clés en main : <br><br>Entretien extérieur : Nettoyage haute pression ou doux de vos façades et toitures (démoussage). <br><br>Clarté et finitions : Nettoyage de vitres (particuliers et pros) et remise en état après travaux (fin de chantier). <br><br>Logistique et vide-maison : Service de débarras complet et aide au déménagement pour une transition sans stress. <br><br>Espaces verts : Petits travaux de jardinage pour un extérieur toujours impeccable.<br><br>Réactivité, rigueur et chantier propre : je m'occupe de tout pour que vous n'ayez rien à faire.",
-      "dossier_photos": "photos1"
+      "dossier_photos": "photos1",
+      "alt_m1": "",
+      "alt_m2": "",
+      "alt_m3": "",
+      "alt_m4": "",
+      "alt_m5": "",
+      "alt_m6": "",
+      "alt_m7": "",
+      "alt_m8": "",
+      "alt_m9": "",
+      "alt_m10": ""
     }
   ],
 

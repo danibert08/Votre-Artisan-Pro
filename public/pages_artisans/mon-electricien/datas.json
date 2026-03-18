@@ -17,6 +17,7 @@
   "google_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34008.155069406894!2d-1.779395543173709!3d46.49010558616243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480467f399c54809%3A0xeff2e2d3e31bfdac!2sMairie%20des%20Sables-d&#39;Olonne!5e0!3m2!1sfr!2sfr!4v1773646378529!5m2!1sfr!2sfr",
   "theme_couleur": "ciel",
   "tag_title": "Mon electricien : Travaux electrique",
+  "meta_description": "Dépannage et installation électique, pour habitation, bureau, hangar, usine.",
   "image_hero": "images/hero/h1.jpeg",
   "image_logo": "images/logo/logo.jpeg",
   "favicon": "images/logo/logo.jpeg",
@@ -31,14 +32,34 @@
       "navTitle": "Electricité",
       "activite": "Electricité",
       "text": "Pourquoi me faire confiance ? <br><br>Réactivité : Un interlocuteur unique et local.<br><br>Conseil : Je vous aide à choisir les meilleures options pour votre budget.<br><br>Engagement : Un chantier propre et un suivi rigoureux.<br><br>Soutenir l'artisanat local, c'est choisir l'assurance d'un travail bien fait.",
-      "dossier_photos": "photos1"
+      "dossier_photos": "photos1",
+      "alt_m1": "",
+      "alt_m2": "",
+      "alt_m3": "",
+      "alt_m4": "",
+      "alt_m5": "",
+      "alt_m6": "",
+      "alt_m7": "",
+      "alt_m8": "",
+      "alt_m9": "",
+      "alt_m10": ""
     },
     {
       "id": "2",
       "navTitle": "Plomberie",
       "activite": "Plomberie",
       "text": "Une fuite, un débouchage ou un chauffe-eau en panne ? <br><br>Ne laissez pas un petit souci devenir un sinistre. <br><br>Fort de 15 années d'intervention sur le terrain, je réagis avec calme et efficacité pour sécuriser votre habitation.<br><br>Mon engagement est simple : une intervention rapide, un tarif transparent et un travail propre. <br><br>Ma longévité dans le métier est ma meilleure signature : je ne propose que ce qui est nécessaire, avec la rigueur d'un professionnel qui connaît chaque rouage de votre installation. <br><br>Votre urgence mérite l'expérience.",
-      "dossier_photos": "photos2"     
+      "dossier_photos": "photos2",
+      "alt_m1": "",
+      "alt_m2": "",
+      "alt_m3": "",
+      "alt_m4": "",
+      "alt_m5": "",
+      "alt_m6": "",
+      "alt_m7": "",
+      "alt_m8": "",
+      "alt_m9": "",
+      "alt_m10": ""   
     }
  
   ],

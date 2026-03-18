@@ -7,6 +7,7 @@
     <base href="<?php echo $baseUrl; ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="<?= $data['meta_description'] ?? $data['activite'] ?>" >
     <link rel="canonical" href="<?= $canonical_url; ?>" />
     <title><?= $data['tag_title']; ?></title>
     <!-- Solution de repli pour anciens navigateurs -->
@@ -100,24 +101,24 @@
                                 <!--     Main1 Pictures     -->
 
                     <p class="services__lambda_photos">
-                        <img class="photo photo1" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m1.jpeg" width="100" alt="">                    
-                        <img class="photo photo2" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m2.jpeg"  width="100" alt="">
+                        <img class="photo photo1" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m1.jpeg" width="100" alt="<?= $section['alt_m1'] ?>">                    
+                        <img class="photo photo2" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m2.jpeg"  width="100" alt="<?= $section['alt_m2'] ?>">
                     </p>
                     <p class="services__lambda_photos">
-                        <img class="photo photo4" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m4.jpeg" width="100" alt="">
-                        <img class="photo photo3" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m3.jpeg"  width="100" alt="">                  
+                        <img class="photo photo4" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m4.jpeg" width="100" alt="<?= $section['alt_m3'] ?>">
+                        <img class="photo photo3" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m3.jpeg"  width="100" alt="<?= $section['alt_m4'] ?>">                  
                     </p>
                     <p class="services__lambda_photos">
-                        <img class="photo photo5" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m5.jpeg" width="100" alt="">                    
-                        <img class="photo photo6" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m6.jpeg" width="100" alt="">
+                        <img class="photo photo5" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m5.jpeg" width="100" alt="<?= $section['alt_m5'] ?>">                    
+                        <img class="photo photo6" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m6.jpeg" width="100" alt="<?= $section['alt_m6'] ?>">
                     </p>
                     <p class="services__lambda_photos">
-                        <img class="photo photo7" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m7.jpeg"  width="100" alt="">                  
-                        <img class="photo photo8" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m8.jpeg"  width="100" alt="">
+                        <img class="photo photo7" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m7.jpeg"  width="100" alt="<?= $section['alt_m7'] ?>">                  
+                        <img class="photo photo8" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m8.jpeg"  width="100" alt="<?= $section['alt_m8'] ?>">
                     </p>
                     <p class="services__lambda_photos">
-                        <img class="photo photo9" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m9.jpeg"  width="100" alt="">                   
-                        <img class="photo photo10" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m10.jpeg" width="100" alt="">
+                        <img class="photo photo9" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m9.jpeg"  width="100" alt="<?= $section['alt_m9'] ?>">                   
+                        <img class="photo photo10" src="/pages_artisans/<?=  $data['dossier'] ?>/images/<?= $section['dossier_photos'] ?>/m10.jpeg" width="100" alt="<?= $section['alt_m10'] ?>">
                     </p>
                 </div>
                 <div class="en-tete__contact">

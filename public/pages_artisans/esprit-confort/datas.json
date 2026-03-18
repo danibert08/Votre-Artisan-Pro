@@ -17,6 +17,7 @@
   "google_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2746.75752654701!2d-1.7561981!3d46.4931135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4806467f2317bb4f%3A0xd4cc18c7abe80542!2sEsprit%20Confort%20Peinture!5e0!3m2!1sfr!2sfr!4v1773258149051!5m2!1sfr!2sfr",
   "theme_couleur": "aubergine",
   "tag_title": "ESPRIT CONFORT PEINTURE : Travaux de peinture, refection de façade, nettoyage de toiture ",
+   "meta_description": "Travaux de peinture",
   "image_hero": "images/hero/h1.jpeg",
   "image_logo": "images/logo/logo.jpeg",
   "favicon": "images/logo/logo.jpeg",
@@ -31,21 +32,51 @@
       "navTitle":"Intérieur",
       "activite": "Peinture et papier peint",
       "text": "Redonnez vie à vos murs avec expertise. <br><br>Parce que votre intérieur est le reflet de votre personnalité, je mets mon savoir-faire à votre service pour transformer vos espaces de vie. Spécialisé en peinture intérieure et pose de revêtements muraux, je vous accompagne de la préparation des supports aux finitions les plus délicates.<br><br>Peinture : Mate, satinée ou veloutée, j'utilise des produits de haute qualité pour un rendu impeccable et durable.<br><br>Papier peint : Pose de papiers peints panoramiques, vinyles ou intissés avec une précision millimétrée.<br><br>Conseil déco : Besoin d'aide pour choisir une palette de couleurs ou une texture ? Je vous guide pour créer l'ambiance qui vous ressemble.<br><br>Le petit plus : Un chantier propre, des délais respectés et une protection totale de votre mobilier.",
-      "dossier_photos": "photos1"
+      "dossier_photos": "photos1",
+      "alt_m1": "",
+      "alt_m2": "",
+      "alt_m3": "",
+      "alt_m4": "",
+      "alt_m5": "",
+      "alt_m6": "",
+      "alt_m7": "",
+      "alt_m8": "",
+      "alt_m9": "",
+      "alt_m10": ""
     },
     {
       "id": "2",
       "navTitle":"Façade",
       "activite": "Ravalement de façade",
       "text": "Protégez et valorisez votre patrimoine avec un ravalement expert.<br><br>La façade de votre maison subit les assauts du temps : pollution, micro-organismes et intempéries finissent par fragiliser vos murs. Un ravalement n’est pas qu’un simple coup de peinture, c'est une cure de jouvence indispensable pour la longévité de votre bâti.<br><br>Mon savoir-faire :<br><br>Nettoyage & Traitement : Élimination des mousses, lichens et traces de pollution.<br><br>Réparation des supports : Traitement des fissures et reprise d'enduits pour garantir l'étanchéité.<br><br>Finitions durables : Peintures extérieures, films minces ou revêtements semi-épais (RSE/RPE) adaptés à votre support.<br><br>Bon à savoir : Un ravalement bien exécuté peut améliorer l'isolation thermique de votre foyer et augmenter significativement la valeur immobilière de votre bien.",
-      "dossier_photos": "photos2"     
+      "dossier_photos": "photos2",
+      "alt_m1": "",
+      "alt_m2": "",
+      "alt_m3": "",
+      "alt_m4": "",
+      "alt_m5": "",
+      "alt_m6": "",
+      "alt_m7": "",
+      "alt_m8": "",
+      "alt_m9": "",
+      "alt_m10": ""     
     },
     {
       "id": "3",
       "navTitle":"Toiture",
       "activite": "Nettoyage toiture",
       "text": "Titre : Toiture encrassée ? Protégez votre maison avant qu'il ne soit trop tard !<br><br>Mousses, lichens et algues retiennent l'humidité et finissent par rendre vos tuiles poreuses, provoquant des fissures et des infiltrations. Un entretien régulier est la seule solution pour prolonger la durée de vie de votre couverture sans avoir à la refaire entièrement.<br><br>Mon protocole de soin complet :<br><br>Démoussage mécanique : Retrait des amas de mousse à la main ou par brossage.<br><br>Nettoyage basse pression : Élimination des traces noires et de la pollution sans abîmer le support.<br><br>Traitement Curatif & Préventif : Application d'un produit fongicide et algicide professionnel pour une efficacité durable.<br><br<Option Protection (Hydrofuge) : Imperméabilisation des tuiles pour que l'eau perle et emporte les saletés avec elle.<br><br>Le conseil de l'expert : Ne montez pas sur votre toit ! Confiez cette tâche dangereuse à un professionnel équipé du matériel de sécurité adéquat.",
-      "dossier_photos": "photos3"
+      "dossier_photos": "photos3",
+      "alt_m1": "",
+      "alt_m2": "",
+      "alt_m3": "",
+      "alt_m4": "",
+      "alt_m5": "",
+      "alt_m6": "",
+      "alt_m7": "",
+      "alt_m8": "",
+      "alt_m9": "",
+      "alt_m10": ""
     }
   ],
 

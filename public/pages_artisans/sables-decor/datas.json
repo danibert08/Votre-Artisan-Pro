@@ -17,6 +17,7 @@
   "google_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d87842.3985444339!2d-1.76114515!3d46.5264186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4804683fe072fd59%3A0x9d2af6c8713ae24e!2sSABLES%20DECOR%20PEINTRE%20EN%20B%C3%82TIMENT!5e0!3m2!1sfr!2sfr!4v1773225176787!5m2!1sfr!2sfr",
   "theme_couleur": "lagon",
   "tag_title": "SABLES DÉCOR : Peinture, Ravalement, Revêtement de sols et murs",
+  "meta_description": "Travaux de peinture",
   "image_hero": "images/hero/h1.jpeg",
   "image_logo": "images/logo/logo.jpeg",
   "favicon": "images/logo/logo.jpeg",
@@ -31,7 +32,17 @@
       "navTitle":"Peinture",
       "activite": "Peinture, Ravalement, Revêtement de sols et murs",
       "text": "Je transforme votre habitat ou vos locaux professionnels avec une approche globale de la rénovation. Mon savoir-faire s’articule autour de quatre piliers essentiels : <br><br>Peinture Intérieure : Des finitions soignées (mat, velours, satin) et un conseil personnalisé sur le choix des couleurs pour créer l'ambiance qui vous ressemble. <br><br>Revêtements de Murs : Pose de papiers peints panoramiques, toile de verre ou enduits décoratifs pour donner du relief à vos cloisons. <br><br>Revêtements de Sols : Installation de parquets flottants, sols PVC ou moquettes, alliant confort acoustique et haute résistance.<br><br>Ravalement de Façade : Protection et mise en valeur de votre patrimoine extérieur grâce à des traitements adaptés et esthétiques.<br><br>Mon engagement : Un diagnostic précis, des matériaux de qualité et un chantier propre pour un résultat durable.",
-      "dossier_photos": "photos1"
+      "dossier_photos": "photos1",
+      "alt_m1": "",
+      "alt_m2": "",
+      "alt_m3": "",
+      "alt_m4": "",
+      "alt_m5": "",
+      "alt_m6": "",
+      "alt_m7": "",
+      "alt_m8": "",
+      "alt_m9": "",
+      "alt_m10": ""
     }
   ],
 
