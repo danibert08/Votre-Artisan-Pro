@@ -3,6 +3,15 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-B9609WEKQ6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-B9609WEKQ6');
+        </script>
     <meta charset="UTF-8">
     <base href="<?php echo $baseUrl; ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
