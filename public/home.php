@@ -90,6 +90,7 @@
             <p>**************</p><br>
             <p><u>Tarif unique sans coûts cachés :</u></p><br>
             <p>Une seule fois 49€ pour la réalisation.</p>
+            <p><strong>***************<br>Les frais de réalisation offert aux 10 <br>premiers clients à l'occasion du lancement de la plateforme Votre Artisan Pro<br>************</strong></p>
             <p>Puis seulement 12,99€/mois pour l'hébergement, la maintenance, les mises à jour et les petites modifications.</p><br>
             <p>**************</p><br>
             <p><u>Vous êtes convaincus ? </u></p><br>
@@ -99,7 +100,6 @@
             <p>**************</p>
             <p>Votre site internet sera en ligne dans les 24 heures</p>
             <p>Vous recevrez ensuite un lien de paiement pour effectuer votre règlement</p>
-            <p>Le premier paiement de votre abonnement interviendra 30 jours plus tard.</p>
             <p>**************</p>
         </div>
 
