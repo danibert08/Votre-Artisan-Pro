@@ -90,7 +90,7 @@
             <p>**************</p><br>
             <p><u>Tarif unique sans coûts cachés :</u></p><br>
             <p>Une seule fois 49€ pour la réalisation.</p>
-            <p><strong>***************<br>Les frais de réalisation offert aux 10 <br>premiers clients à l'occasion du lancement de la plateforme Votre Artisan Pro<br>************</strong></p>
+            <p><strong>***************<br>Les frais de réalisation offerts aux 10 <br>premiers clients à l'occasion du lancement de la plateforme Votre Artisan Pro<br>************</strong></p>
             <p>Puis seulement 12,99€/mois pour l'hébergement, la maintenance, les mises à jour et les petites modifications.</p><br>
             <p>**************</p><br>
             <p><u>Vous êtes convaincus ? </u></p><br>
