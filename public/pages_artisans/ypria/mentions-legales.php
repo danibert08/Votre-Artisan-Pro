@@ -1,6 +1,6 @@
 <?php
     require('base.php');
-    require(__DIR__ .'/../2_templates/template_mentions_legales.php');
+    require(__DIR__ .'/../2_templates/template-mentions-legales.php');
     ?>
 
 
