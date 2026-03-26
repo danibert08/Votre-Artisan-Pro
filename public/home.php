@@ -163,7 +163,7 @@
             <span>-</span>
             <a href="cgv.php">CGV</a>
             <span>-</span>
-            <a href="mentions_legales.php">Mentions légales</a>
+            <a href="mentions-legales.php">Mentions légales</a>
         </div>
     </footer>
 <script src="/assets/vap/form.js"></script>
